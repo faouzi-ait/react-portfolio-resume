@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { LOCALES } from "../i18n/constants";
 import { setLanguage } from "../redux/actions/set_language";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import { respondTo } from "../styled-components/ResponsiveUtils";
+// import { respondTo } from "../styled-components/ResponsiveUtils";
 import NavigationLinks from "../components/NavigationLinks";
-import sun from "./sun.svg";
-import night from "./night.svg";
+import sun from "../images/sun.svg";
+import night from "../images/night.svg";
 
 import {
   setLightThemeStatus,
@@ -16,16 +16,18 @@ import {
 function ToggleOptions() {
   const dispatch = useDispatch();
   const { lightTheme } = useSelector((state) => state);
+  const [isOpen, setIsOpen] = useState(false);
 
   const Container = styled.div`
     position: fixed;
-    top: 7%;
-    right: 5%;
+    top: 10%;
+    right: 0;
     display: flex;
+    display: ${(props) => (props.isOpen ? "block" : "none")};
     flex-direction: column;
     justify-content: center;
-    color: ${({ theme }) => theme.color};
-    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.color2};
+    background: ${({ theme }) => theme.background2};
   `;
 
   const ButtonsContainer = styled.div`
@@ -44,28 +46,57 @@ function ToggleOptions() {
     }
   `;
 
+  const MenuIcon = styled.button`
+    display: inline-block;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    color: ${({ theme }) => theme.color2};
+    background: ${({ theme }) => theme.background2};
+    cursor: pointer;
+
+    &:hover {
+      background: #30bfbf;
+    }
+
+    &:active {
+      background: ${({ theme }) => theme.background2};
+    }
+  `;
+
+  const Group = styled.div`
+    display: flex;
+    position: relative;
+  `;
+
   return (
-    <Container>
-      <NavigationLinks />
-      <ButtonsContainer>
-        <ButtonsStyle onClick={() => dispatch(setLanguage(LOCALES.ENGLISH))}>
-          EN
-        </ButtonsStyle>
-        <ButtonsStyle onClick={() => dispatch(setLanguage(LOCALES.FRENCH))}>
-          FR
-        </ButtonsStyle>
-        {!lightTheme.state && (
-          <ButtonsStyle onClick={() => dispatch(setLightThemeStatus)}>
-            <img src={sun} alt="sun" width="30" />
+    <Group>
+      <MenuIcon onClick={() => setIsOpen(!isOpen)}>MENU</MenuIcon>
+      <Container isOpen={isOpen}>
+        <NavigationLinks />
+        <ButtonsContainer>
+          <ButtonsStyle onClick={() => dispatch(setLanguage(LOCALES.ENGLISH))}>
+            EN
           </ButtonsStyle>
-        )}
-        {lightTheme.state && (
-          <ButtonsStyle onClick={() => dispatch(setDarkThemeStatus)}>
-            <img src={night} alt="night" width="30" />
+          <ButtonsStyle onClick={() => dispatch(setLanguage(LOCALES.FRENCH))}>
+            FR
           </ButtonsStyle>
-        )}
-      </ButtonsContainer>
-    </Container>
+          {!lightTheme.state && (
+            <ButtonsStyle onClick={() => dispatch(setLightThemeStatus)}>
+              <img src={sun} alt="sun" width="30" />
+            </ButtonsStyle>
+          )}
+          {lightTheme.state && (
+            <ButtonsStyle onClick={() => dispatch(setDarkThemeStatus)}>
+              <img src={night} alt="night" width="30" />
+            </ButtonsStyle>
+          )}
+        </ButtonsContainer>
+      </Container>
+    </Group>
   );
 }
 

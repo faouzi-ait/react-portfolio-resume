@@ -5,6 +5,7 @@ export default {
     greeting: "hello",
     text: "This is the content styled component",
     home: "Home Page",
+    subHeader: "Interactive Resume",
     profile: "Profile Page",
     experiences: "Experiences Page",
     portfolio: "Portfolio Page",

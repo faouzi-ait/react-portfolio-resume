@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const NavigtionLink = styled(Link)`
-  padding: 1.5rem 1.75rem;
+  padding: 1.5rem 0;
   text-align: center;
   cursor: pointer;
 

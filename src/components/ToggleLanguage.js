@@ -20,7 +20,7 @@ function ToggleOptions() {
 
   const Container = styled.div`
     position: fixed;
-    top: 10%;
+    top: 22%;
     right: 0;
     display: flex;
     display: ${(props) => (props.isOpen ? "block" : "none")};

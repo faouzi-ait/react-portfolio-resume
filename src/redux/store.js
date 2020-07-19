@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import logger from "redux-logger";
+// import logger from "redux-logger";
 import { languageTheme } from "./reducers/language";
 import { lightTheme } from "./reducers/translations";
 
@@ -14,8 +14,8 @@ const store = createStore(
   combinedReducers,
   initialThemeState,
   compose(
-    applyMiddleware(logger),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    // applyMiddleware(logger),
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
 

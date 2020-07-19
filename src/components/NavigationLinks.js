@@ -1,7 +1,6 @@
 import React from "react";
 import { t } from "../i18n/translate";
 import styled from "styled-components";
-import { Link, animateScroll as scroll } from "react-scroll";
 import NavLink from "../styled-components/NavLink";
 
 import "../activeLink.css";

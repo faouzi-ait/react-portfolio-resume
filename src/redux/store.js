@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware, compose } from "redux";
+import { createStore, combineReducers, compose } from "redux";
 // import logger from "redux-logger";
 import { languageTheme } from "./reducers/language";
 import { lightTheme } from "./reducers/translations";

@@ -12,7 +12,7 @@ const NavigtionLink = styled(Link)`
   }
 `;
 
-function NavLink({ children, index }) {
+function NavLink({ children, index, ...rest }) {
   return (
     <NavigtionLink
       to={index}
@@ -20,6 +20,7 @@ function NavLink({ children, index }) {
       smooth={true}
       offset={0}
       duration={500}
+      {...rest}
     >
       {children}
     </NavigtionLink>

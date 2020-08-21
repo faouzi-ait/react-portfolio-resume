@@ -1,5 +1,4 @@
 import { createStore, combineReducers, compose } from "redux";
-// import logger from "redux-logger";
 import { languageTheme } from "./reducers/language";
 import { lightTheme } from "./reducers/translations";
 
@@ -10,14 +9,7 @@ let initialThemeState = {
   lightTheme: persistedTheme ? JSON.parse(persistedTheme) : false,
 };
 
-const store = createStore(
-  combinedReducers,
-  initialThemeState,
-  compose(
-    // applyMiddleware(logger),
-    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
-);
+const store = createStore(combinedReducers, initialThemeState, compose());
 
 store.subscribe(() => {
   const preferences = store.getState().lightTheme;

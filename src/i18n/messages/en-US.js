@@ -5,7 +5,7 @@ export default {
     greeting: "hello",
     text: "This is the content styled component",
     home: "Home Page",
-    subHeader: "Interactive Resume",
+    subHeader: "Front End Developer React Redux",
     profile: "Profile Page",
     experiences: "Experiences Page",
     portfolio: "Portfolio Page",
@@ -14,6 +14,6 @@ export default {
     profileLink: "Profile",
     experiencesLink: "Experiences",
     portfolioLink: "Portfolio",
-    contactLink: "Contact",
+    contactLink: "Contact me",
   },
 };

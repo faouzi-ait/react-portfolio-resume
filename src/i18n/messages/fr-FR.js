@@ -5,7 +5,7 @@ export default {
     greeting: "Bonjour",
     text: "Ceci est le contenu du composant stylisé",
     home: "Page D'accueil",
-    subHeader: "Curriculum Vitae",
+    subHeader: "Développeur Front End React Redux",
     profile: "Mon Profile",
     experiences: "Mes Experiences",
     portfolio: "Mon Portfolio",

@@ -1,8 +1,8 @@
 import React from "react";
-import Page from "../../styled-components/Page";
+// import Page from "../../styled-components/Page";
 import styled from "styled-components";
-import { t } from "../../i18n/translate";
-import profile from "../../images/landscape.jpg";
+// import { t } from "../../i18n/translate";
+// import profile from "../../images/landscape.jpg";
 
 const HomeContainer = styled.div`
   width: 100vw;

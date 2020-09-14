@@ -4,6 +4,7 @@ import { t } from "../../i18n/translate";
 import NavLink from "../../styled-components/NavLink";
 // import { respondTo } from "../../styled-components/ResponsiveUtils";
 import bcgImage from "../../images/home-image.jpg";
+import "./Home.css";
 
 const HomeContainer = styled.div`
   width: 100vw;
@@ -13,9 +14,9 @@ const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.color};
-  background-image: url(${bcgImage});
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  // background-image: url(${bcgImage});
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
 `;
 
 const MainHeader = styled.span`
@@ -26,6 +27,7 @@ const MainHeader = styled.span`
   font-size: 3.5rem;
   font-weight: bold;
   letter-spacing: 6px;
+  z-index: 9999;
 `;
 
 const SubHeader = styled(MainHeader)`
@@ -76,9 +78,12 @@ const DownLink = styled.button`
 function Home() {
   return (
     <HomeContainer id="home">
+      <div className="hero-container">
+        <video src="/videos/bg_video.mp4" autoPlay loop muted></video>
+      </div>
       <HeaderContainer>
         <MainHeader>Faouzi Aitelhara</MainHeader>
-        <Line />
+        {/* <Line /> */}
         <SubHeader>{t("subHeader")}</SubHeader>
       </HeaderContainer>
       <NavLink index="profile">

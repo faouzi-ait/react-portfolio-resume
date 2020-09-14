@@ -28,6 +28,7 @@ function ToggleOptions() {
     justify-content: center;
     color: ${({ theme }) => theme.color2};
     background: ${({ theme }) => theme.background2};
+    z-index: 9999;
   `;
 
   const ButtonsContainer = styled.div`
@@ -57,6 +58,7 @@ function ToggleOptions() {
     color: ${({ theme }) => theme.color2};
     background: ${({ theme }) => theme.background2};
     cursor: pointer;
+    z-index: 9999;
 
     &:hover {
       background: #30bfbf;

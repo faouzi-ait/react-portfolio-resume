@@ -5,9 +5,9 @@ import styled from "styled-components";
 // import profile from "../../images/landscape.jpg";
 
 const HomeContainer = styled.div`
+  display: flex;
   width: 100vw;
   height: 100vh;
-  display: flex;
   background: ${({ theme }) => theme.background};
 `;
 
@@ -16,7 +16,7 @@ const Boxes = styled.div`
   background: ${({ theme }) => theme.background};
 
   &:nth-child(2) {
-    background: ${({ theme }) => theme.background3}
+    background: ${({ theme }) => theme.background3};
   }
 `;
 

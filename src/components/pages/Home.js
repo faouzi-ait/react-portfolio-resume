@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { t } from "../../i18n/translate";
 import NavLink from "../../styled-components/NavLink";
-// import { respondTo } from "../../styled-components/ResponsiveUtils";
+import { respondTo } from "../../styled-components/ResponsiveUtils";
+
+// FOR THE BACKGROUND IMAGE
 import bcgImage from "../../images/home-image.jpg";
 import "./Home.css";
 
@@ -14,10 +16,12 @@ const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.color};
+  user-select: none;
+
+  // FOR THE BACKGROUND IMAGE
   // background-image: url(${bcgImage});
   // background-size: 100% 100%;
-  // background-repeat: no-repeat;
-  user-select: none;
+  // background-repeat: no-repeat;  
 `;
 
 const MainHeader = styled.span`
@@ -29,6 +33,15 @@ const MainHeader = styled.span`
   font-weight: bold;
   letter-spacing: 6px;
   z-index: 9999;
+
+  ${respondTo.xs`
+    font-size: 1.25rem
+  `}
+
+  ${respondTo.sm`
+    font-size: 2rem
+  `}
+
 `;
 
 const SubHeader = styled(MainHeader)`
@@ -46,7 +59,7 @@ const HeaderContainer = styled.div`
 
 const Line = styled.hr`
   width: 85%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 `;
 
 const HeroContainer = styled.div`
@@ -91,6 +104,10 @@ const DownLink = styled.button`
   &:active {
     background: ${({ theme }) => theme.background2};
   }
+
+  ${respondTo.sm`
+    font-size: 2rem
+  `}
 `;
 
 function Home() {

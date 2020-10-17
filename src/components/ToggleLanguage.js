@@ -3,7 +3,6 @@ import { LOCALES } from "../i18n/constants";
 import { setLanguage } from "../redux/actions/set_language";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-// import { respondTo } from "../styled-components/ResponsiveUtils";
 import NavigationLinks from "../components/NavigationLinks";
 import sun from "../images/sun.svg";
 import night from "../images/night.svg";
@@ -52,7 +51,8 @@ function ToggleOptions() {
     position: fixed;
     top: 0%;
     right: 0%;
-    padding: 0.75rem 1.5rem;
+    font-size: 1.75rem;
+    padding: .5rem 1.5rem;
     outline: none;
     border: none;
     color: ${({ theme }) => theme.color2};
@@ -76,7 +76,7 @@ function ToggleOptions() {
 
   return (
     <Group>
-      <MenuIcon onClick={() => setIsOpen(!isOpen)}>MENU</MenuIcon>
+      <MenuIcon onClick={() => setIsOpen(!isOpen)}><i class="fa fa-bars"></i></MenuIcon>
       <Container isOpen={isOpen}>
         <NavigationLinks />
         <ButtonsContainer>

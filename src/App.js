@@ -11,11 +11,14 @@ import Profile from "./components/pages/Profile";
 import Experiences from "./components/pages/Experiences";
 import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/pages/Contact";
+
 import MainLayoutContainer from "./styled-components/MainLayoutContainer";
 import ToggleOptions from "./components/ToggleLanguage";
 
 function App() {
-  const { languageTheme, lightTheme } = useSelector((state) => state);
+  const { 
+    languageTheme, 
+    lightTheme } = useSelector((state) => state);
   const persistedLanguage = localStorage.getItem("language");
 
   return (

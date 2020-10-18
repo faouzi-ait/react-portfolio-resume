@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { t } from "../../i18n/translate";
-import NavLink from "../../styled-components/NavLink";
+// import NavLink from "../../styled-components/NavLink";
 import { respondTo } from "../../styled-components/ResponsiveUtils";
 
 // FOR THE BACKGROUND IMAGE
@@ -77,38 +77,38 @@ const Video = styled.video`
   z-index: -1;
 `;
 
-const DownLink = styled.button`
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 50%
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.color2};
-  background: ${({ theme }) => theme.background2};
-  padding: 1rem 2.5rem;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border: 0;
-  transform: translateX(-50%);
-  cursor: pointer;
+// const DownLink = styled.button`
+//   display: inline-block;
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%
+//   font-size: 1.5rem;
+//   color: ${({ theme }) => theme.color2};
+//   background: ${({ theme }) => theme.background2};
+//   padding: 1rem 2.5rem;
+//   border-top-left-radius: 10px;
+//   border-top-right-radius: 10px;
+//   border: 0;
+//   transform: translateX(-50%);
+//   cursor: pointer;
 
-  &:hover {
-    background: #30bfbf;
-  }
+//   &:hover {
+//     background: #30bfbf;
+//   }
 
-  &:focus {
-    outline: none;
-    border: 0;
-  }
+//   &:focus {
+//     outline: none;
+//     border: 0;
+//   }
 
-  &:active {
-    background: ${({ theme }) => theme.background2};
-  }
+//   &:active {
+//     background: ${({ theme }) => theme.background2};
+//   }
 
-  ${respondTo.sm`
-    font-size: 2rem
-  `}
-`;
+//   ${respondTo.sm`
+//     font-size: 2rem
+//   `}
+// `;
 
 function Home() {
   useEffect(() => {

@@ -65,8 +65,8 @@ const Line = styled.hr`
 const HeroContainer = styled.div`
   position: absolute;
   background-color: rgba(0, 0, 0, 0.116);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 `;
 
 const Video = styled.video`
@@ -125,9 +125,9 @@ function Home() {
         <Line />
         <SubHeader>{t("subHeader")}</SubHeader>
       </HeaderContainer>
-      <NavLink index="profile">
+      {/* <NavLink index="profile">
         <DownLink>&darr;</DownLink>
-      </NavLink>
+      </NavLink> */}
     </HomeContainer>
   );
 }

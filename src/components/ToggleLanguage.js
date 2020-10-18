@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { LOCALES } from "../i18n/constants";
-import { setLanguage } from "../redux/actions/set_language";
-import { useDispatch, useSelector } from "react-redux";
-import styled from "styled-components";
-import NavigationLinks from "../components/NavigationLinks";
-import sun from "../images/sun.svg";
-import night from "../images/night.svg";
+import React, { useState } from 'react';
+import { LOCALES } from '../i18n/constants';
+import { setLanguage } from '../redux/actions/set_language';
+import { useDispatch, useSelector } from 'react-redux';
+import styled from 'styled-components';
+import NavigationLinks from '../components/NavigationLinks';
+import sun from '../images/sun.svg';
+import night from '../images/night.svg';
 
 import {
   setLightThemeStatus,
   setDarkThemeStatus,
-} from "../redux/actions/set_themes";
+} from '../redux/actions/set_themes';
 
 function ToggleOptions() {
   const dispatch = useDispatch();
@@ -19,10 +19,10 @@ function ToggleOptions() {
 
   const Container = styled.div`
     position: fixed;
-    top: 22%;
+    top: 11%;
     right: 0;
     display: flex;
-    display: ${(props) => (props.isOpen ? "block" : "none")};
+    display: ${(props) => (props.isOpen ? 'block' : 'none')};
     flex-direction: column;
     justify-content: center;
     color: ${({ theme }) => theme.color2};
@@ -52,7 +52,7 @@ function ToggleOptions() {
     top: 0%;
     right: 0%;
     font-size: 1.75rem;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     outline: none;
     border: none;
     color: ${({ theme }) => theme.color2};
@@ -72,11 +72,14 @@ function ToggleOptions() {
   const Group = styled.div`
     display: flex;
     position: relative;
+    z-index: 99999;
   `;
 
   return (
     <Group>
-      <MenuIcon onClick={() => setIsOpen(!isOpen)}><i class="fa fa-bars"></i></MenuIcon>
+      <MenuIcon onClick={() => setIsOpen(!isOpen)}>
+        <i class="fa fa-bars"></i>
+      </MenuIcon>
       <Container isOpen={isOpen}>
         <NavigationLinks />
         <ButtonsContainer>

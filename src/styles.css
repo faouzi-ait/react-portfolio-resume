@@ -1,0 +1,7 @@
+.scroll-to-top {
+    width: 7rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background:pink;
+}

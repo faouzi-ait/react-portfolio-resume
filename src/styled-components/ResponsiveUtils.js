@@ -4,8 +4,8 @@ const breakpoints = {
   xl: "1400px",
   lg: "1200px",
   md: "992px",
-  sm: "768px",
-  s: "480px",
+  s: "768px",
+  sm: "480px",
   xs: "0px",
 };
 

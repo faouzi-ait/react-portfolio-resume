@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LOCALES } from '../i18n/constants';
 import { setLanguage } from '../redux/actions/set_language';
 import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
 import NavigationLinks from '../components/NavigationLinks';
 import sun from '../images/sun.svg';
 import night from '../images/night.svg';
@@ -12,74 +11,44 @@ import {
   setDarkThemeStatus,
 } from '../redux/actions/set_themes';
 
+import {
+  Container,
+  ButtonsContainer,
+  MenuIcon,
+  ButtonsStyle,
+  Group,
+  BackToTop,
+} from '../components/styled-components-styles/ToggleLanguageStyles';
+
 function ToggleOptions() {
   const dispatch = useDispatch();
   const { lightTheme } = useSelector((state) => state);
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const Container = styled.div`
-    position: fixed;
-    top: 11%;
-    right: 0;
-    display: flex;
-    display: ${(props) => (props.isOpen ? 'block' : 'none')};
-    flex-direction: column;
-    justify-content: center;
-    color: ${({ theme }) => theme.color2};
-    background: ${({ theme }) => theme.background2};
-    z-index: 9999;
-  `;
+  useEffect(() => {
+    document.addEventListener('scroll', function (e) {
+      window.pageYOffset > 790 ? setIsVisible(true) : setIsVisible(false);
+    });
+  }, []);
 
-  const ButtonsContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  `;
-
-  const ButtonsStyle = styled.button`
-    padding: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      background: #fff;
-    }
-  `;
-
-  const MenuIcon = styled.button`
-    display: inline-block;
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    font-size: 1.75rem;
-    padding: 0.5rem 1.5rem;
-    outline: none;
-    border: none;
-    color: ${({ theme }) => theme.color2};
-    background: ${({ theme }) => theme.background2};
-    cursor: pointer;
-    z-index: 9999;
-
-    &:hover {
-      background: #30bfbf;
-    }
-
-    &:active {
-      background: ${({ theme }) => theme.background2};
-    }
-  `;
-
-  const Group = styled.div`
-    display: flex;
-    position: relative;
-    z-index: 99999;
-  `;
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <Group>
       <MenuIcon onClick={() => setIsOpen(!isOpen)}>
-        <i class="fa fa-bars"></i>
+        <i className="fa fa-bars"></i>
       </MenuIcon>
+      {isVisible && (
+        <BackToTop className="scroll-to-top" onClick={() => scrollToTop()}>
+          <i class="fa fa-arrow-up"></i>
+        </BackToTop>
+      )}
       <Container isOpen={isOpen}>
         <NavigationLinks />
         <ButtonsContainer>

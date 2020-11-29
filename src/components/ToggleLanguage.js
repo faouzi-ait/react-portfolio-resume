@@ -46,7 +46,7 @@ function ToggleOptions() {
       </MenuIcon>
       {isVisible && (
         <BackToTop className="scroll-to-top" onClick={() => scrollToTop()}>
-          <i class="fa fa-arrow-up"></i>
+          <i className="fa fa-arrow-up"></i>
         </BackToTop>
       )}
       <Container isOpen={isOpen}>

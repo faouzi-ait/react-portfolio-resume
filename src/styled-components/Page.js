@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { respondTo } from "../styled-components/ResponsiveUtils";
 
 const MainPage = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: ${({ theme }) => theme.color};
   background: ${({ theme }) => theme.background};

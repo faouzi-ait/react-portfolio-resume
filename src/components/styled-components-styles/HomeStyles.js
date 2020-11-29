@@ -18,8 +18,8 @@ export const HomeContainer = styled.div`
 `;
 
 export const MainHeader = styled.span`
+  width: 100% !important;
   color: #fff;
-  text-align: center;
   font-family: 'Varela', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -31,7 +31,7 @@ export const TopHeader = styled(MainHeader)`
   font-style: italic;
 
   ${respondTo.sm`
-  font-size: 2.5rem
+  font-size: 1.75rem
   `}
 
   ${respondTo.s`
@@ -40,8 +40,15 @@ export const TopHeader = styled(MainHeader)`
 `;
 
 export const SubHeader = styled(MainHeader)`
-  font-size: 1.5rem;
   font-style: italic;
+
+  ${respondTo.sm`
+  font-size: 1rem
+  `}
+
+  ${respondTo.s`
+  font-size: 1.75rem
+  `}
 `;
 
 export const HeaderContainer = styled.div`

@@ -9,7 +9,7 @@ import {
   TopHeader,
   Line,
   SubHeader,
-  DownLink,
+  // DownLink,
 } from '../styled-components-styles/HomeStyles';
 
 import './Home.css';
@@ -32,7 +32,7 @@ function Home() {
         <SubHeader>{t('subHeader2')}</SubHeader>
       </HeaderContainer>
       <NavLink index="profile">
-        <DownLink>&darr;</DownLink>
+        {/* <DownLink>&darr;</DownLink> */}
       </NavLink>
     </HomeContainer>
   );

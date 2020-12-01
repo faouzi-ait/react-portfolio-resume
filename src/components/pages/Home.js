@@ -1,23 +1,23 @@
-import React, { useEffect } from 'react';
-import { t } from '../../i18n/translate';
+import React from 'react';
 import NavLink from '../../styled-components/NavLink';
+import { t } from '../../i18n/translate';
 import {
-  HomeContainer,
   // HeroContainer,
   // Video,
-  HeaderContainer,
-  TopHeader,
-  Line,
-  SubHeader,
   // DownLink,
+  HeaderContainer,
+  HomeContainer,
+  TopHeader,
+  SubHeader,
+  Line,
 } from '../styled-components-styles/HomeStyles';
 
 import './Home.css';
 
 function Home() {
-  useEffect(() => {
-    // document.querySelector('video').playbackRate = 0.93;
-  }, []);
+  // useEffect(() => {
+  //   document.querySelector('video').playbackRate = 0.93;
+  // }, []);
 
   return (
     <HomeContainer id="home">

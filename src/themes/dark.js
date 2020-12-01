@@ -1,15 +1,10 @@
-import BASE from "./base";
+import BASE from './base';
 
 export default {
   ...BASE,
   color: '#fff',
-  color2: '#000',
-  profileHeaders: '#fff',
-  colorLink: 'blue',
-  border: 'red',
-  background: '#484848',
+  color2: 'rgb(10, 28, 51)',
+  background: 'rgb(10, 28, 51)',
   background2: '#fff',
-  respond: 'pink',
-  small: 'blue',
-  xtra: 'red',
 };
+// background: '#484848',

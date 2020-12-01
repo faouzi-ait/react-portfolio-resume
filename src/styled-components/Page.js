@@ -8,12 +8,12 @@ const MainPage = styled.div`
   color: ${({ theme }) => theme.color};
   background: ${({ theme }) => theme.background};
 
-  ${respondTo.xs``}
-  ${respondTo.s``}
-  ${respondTo.sm``}
-  ${respondTo.md``}
-  ${respondTo.lg``}
   ${respondTo.xl``}
+  ${respondTo.lg``}
+  ${respondTo.md``}
+  ${respondTo.sm``}
+  ${respondTo.s``}
+  ${respondTo.xs``}
 `;
 
 function Page({ children, id = "", ...rest }) {

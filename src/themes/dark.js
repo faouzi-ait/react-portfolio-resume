@@ -6,5 +6,6 @@ export default {
   color2: 'rgb(10, 28, 51)',
   background: 'rgb(10, 28, 51)',
   background2: '#fff',
+  background3: 'rgb(10, 28, 51)',
 };
 // background: '#484848',

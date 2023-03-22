@@ -1,4 +1,4 @@
-import { LIGHT_MODE, DARK_MODE } from "../types";
+import { LIGHT_MODE, DARK_MODE } from "../../types";
 
 const setLightThemeStatus = {
   type: LIGHT_MODE,

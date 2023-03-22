@@ -1,6 +1,6 @@
 import { createStore, combineReducers, compose } from "redux";
-import { languageTheme } from "./reducers/language";
-import { lightTheme } from "./reducers/translations";
+import { languageTheme } from "./redux/reducers/language";
+import { lightTheme } from "./redux/reducers/translations";
 
 const combinedReducers = combineReducers({ languageTheme, lightTheme });
 const persistedTheme = localStorage.getItem("isLightTheme");

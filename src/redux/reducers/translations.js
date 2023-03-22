@@ -1,4 +1,4 @@
-import { LIGHT_MODE, DARK_MODE } from "../types";
+import { LIGHT_MODE, DARK_MODE } from "../../types";
 
 export const lightTheme = (state = false, action) => {
   switch (action.type) {

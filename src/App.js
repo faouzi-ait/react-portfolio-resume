@@ -2,10 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import TranslationProvider from './i18n/Provider';
 
-import { ThemeProvider } from 'styled-components';
-import { THEMES } from './theme';
-import { getTheme } from './utils/utilities';
-
 import Home from './components/pages/Home';
 import Profile from './components/pages/Profile';
 import Experiences from './components/pages/Experiences';
@@ -14,6 +10,10 @@ import Contact from './components/pages/Contact';
 
 import MainLayoutContainer from './styled-components/MainLayoutContainer';
 import ToggleOptions from './components/ToggleLanguage';
+
+import { ThemeProvider } from 'styled-components';
+import { THEMES } from './theme';
+import { getTheme } from './utils/utilities';
 
 import './styles.css';
 

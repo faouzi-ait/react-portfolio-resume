@@ -8,87 +8,130 @@ export const HomeContainer = styled.div`
   background: ${({ theme }) => theme.background};
 `;
 
+export const ProfileDesc = styled.p`
+  position: relative;
+  // width: 70%;
+  margin-top: -2rem;
+  padding: 0 3rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2.75rem;
+  text-align: center;
+
+  &:before {
+    content: '“';
+    position: relative;
+    top: 90px;
+    font-size: 12rem;
+    margin-right: 1rem;
+  }
+
+  @media only screen and (max-width: 975px) {
+    font-size: 1.25rem;
+
+    &:before {
+      top: 40px;
+      margin-right: 0.5rem;
+      font-size: 6rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.25rem;
+
+    &:before {
+      font-size: 6rem;
+      margin-right: 0.5rem;
+    }
+  }
+`;
+
 export const Boxes = styled.div`
-  width: 85%;
-  margin: 2rem auto;
-  // padding: 2rem 2rem;
+  width: 27%;
+  margin: 1.5rem 0.5rem;
+  padding: 1rem 1rem;
   background: ${({ theme }) => theme.background3};
+  border: 1px solid ${({ theme }) => theme.background2};
   border-radius: 4px;
+
+  @media only screen and (max-width: 975px) {
+    width: 75%;
+    margin: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    margin: 0.5rem 0.5rem;
+  }
+`;
+
+export const ExpertiseContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 975px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const ExpertiseTitle = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', Sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: center;
+  font-color: ${({ theme }) => theme.background2};
 `;
 
 export const Title = styled.div`
-  padding-bottom: 0.75rem;
-  font-size: 24px;
-  /* font-size: 2.625rem; */
+  width: 35%;
+  margin-top: 3%;
   padding: 0.5rem 1.5rem;
   padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
   font-family: 'Stag Medium', Verdana, Arial, serif, 'Markerfield Regular';
   font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
   line-height: 1.14;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  border-bottom: 5px solid #000;
+  letter-spacing: 1px;
+  // text-transform: uppercase;
+  border-bottom: 5px solid ${({ theme }) => theme.background2};
+
+  @media only screen and (max-width: 975px) {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
-export const ProfileDescription = styled.p`
-  margin-bottom: 0.25rem;
-  padding: 1.5rem;
-  font-size: 1.15rem;
-  line-height: 1.75rem;
-  letter-spacing: 0.35px;
+export const TitleMargin = styled.div`
+  margin-left: 1rem;
+`;
+
+export const HomeContainerLayout = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+`;
+
+export const Expertise = styled.div`
+  font-family: 'Overpass', sans-serif;
+  line-height: 20px;
+`;
+
+export const ExpertiseList = styled(Expertise)`
+  font-style: italic;
 `;
 
 export const Separator = styled.div`
-  margin: -2rem 0;
-`;
-
-export const SkillSetContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
-  margin-right: 1.5rem;
-`;
-
-export const SkillTitle = styled.div`
-  margin: 1rem 0 0.25rem 0;
-  font-size: 1.2rem;
-  font-weight: 400;
-`;
-
-export const SkillSetText = styled.div`
-  color: grey;
-  font-size: 1rem;
-  line-height: 1.5rem;
-`;
-
-export const SkillSetQuote = styled(SkillSetText)`
-  font-style: italic;
-`;
-
-export const Education = styled.div`
-  width: 83%;
-  font-style: italic;
-  color: grey;
-  font-size: 1rem;
-  line-height: 1.5rem;
-`;
-
-export const SkillsetMainContainer = styled.div`
-  display: flex;
-  padding: 1.5rem;
-`;
-
-export const EducationMainContainer = styled.div`
-  display: grid;
-  grid-template-columns: 33% 1fr;
-  grid-template-rows: 6rem;
-  padding: 1.5rem;
-`;
-
-export const ResponseContainer = styled.div`
-  margin-bottom: 1rem;
-`;
-
-export const EducationContainerBis = styled.div`
-  border: 1px solid red;
+  margin: 1rem 0;
 `;

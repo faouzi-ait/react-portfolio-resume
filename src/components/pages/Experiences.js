@@ -20,7 +20,6 @@ import { fullstackWork, uiWork } from '../../utils/utilities';
 // import { t } from '../../i18n/translate';
 
 function Experiences() {
-
   return (
     <Page id="experiences">
       <HomeContainerLayout>
@@ -42,6 +41,7 @@ function Experiences() {
         <WorkTitle>User Interfaces |</WorkTitle>
         <Project1>User Interfaces &amp; Maps</Project1>
       </div>
+      <WorkSubTitle></WorkSubTitle>
       <ExpertiseContainer>
         {uiWork.map((item) => (
           <Boxes width={item.width}>

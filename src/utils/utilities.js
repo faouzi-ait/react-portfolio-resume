@@ -13,12 +13,33 @@ export const getTheme = (themeName) => {
 };
 
 export const fullstackWork = [
-  { width: '45%', src: 'commerce.png' },
-  { width: '45%', src: 'wave.png' },
+  {
+    width: '45%',
+    src: 'commerce.png',
+    label: 'Fullstack E-Commerce applications based on the Amazon experience',
+  },
+  {
+    width: '45%',
+    src: 'wave.png',
+    label:
+      'Fullstack E-Commerce applications specialized in guitards of all kind',
+  },
 ];
 
 export const uiWork = [
-  { width: '30%', src: 'trilio.png' },
-  { width: '30%', src: 'nexter.png' },
-  { width: '30%', src: 'map.png' },
+  {
+    width: '45%',
+    src: 'nexter.png',
+    label: 'Real estate presentation user interface',
+  },
+  {
+    width: '45%',
+    src: 'map.png',
+    label: 'Building filtering map in Zurich, Switzerland',
+  },
+  // {
+  //   width: '30%',
+  //   src: 'trilio.png',
+  //   label: 'Hotel resort website for holiday makers',
+  // },
 ];

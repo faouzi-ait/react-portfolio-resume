@@ -29,6 +29,7 @@ export const MainHeader = styled.span`
 
 export const TopHeader = styled(MainHeader)`
   font-style: italic;
+  margin-top: -5rem;
 
   ${respondTo.sm`
   font-size: 1.75rem
@@ -41,7 +42,7 @@ export const TopHeader = styled(MainHeader)`
 
 export const SubHeader = styled(MainHeader)`
   font-style: italic;
-
+  // margin-top: -2rem;
   ${respondTo.sm`
   font-size: 1rem
   `}
@@ -55,11 +56,29 @@ export const SubHeader2 = styled(MainHeader)`
   font-size: 0.5rem;
 
   ${respondTo.sm`
-  font-size: .75rem
+  font-size: .75rem;
   `}
 
   ${respondTo.s`
   font-size: .85rem
+  `}
+`;
+
+export const SubHeader2Container = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  ${respondTo.sm`
+
+  `}
+
+  ${respondTo.s`
   `}
 `;
 

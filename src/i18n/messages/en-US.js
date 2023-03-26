@@ -9,7 +9,7 @@ export default {
     // SIDE NAVIGATION
     homeLink: 'Home',
     profileLink: 'Expertise',
-    experiencesLink: 'Experiences',
+    experiencesLink: 'My Work',
     portfolioLink: 'Portfolio',
     contactLink: 'Contact me',
     profileTitle: 'My Expertise',
@@ -31,15 +31,22 @@ export default {
     development:
       'JavaScript ES6+, HTML, CSS, SASS, Git, Github, Netifly, VS Code, Postman, In-Vision.',
 
+    // MY WORK PAGE
+    work_1:
+      'Developed a number of applications to support an active portfolio to consolidate and further my skillset.',
+    work_2:
+      'Completed several E-Commerce applications using the ReactJS ecosystem along the most popular and robust third libraries such as Redux, Redux Saga, Styled Component, SASS and Material UI.',
+    work_3:
+      'Professionally, I have been focusing on banking and financial applications for a major british bank.',
+    work_legend_1:
+      'Full stack E-Commerce application based on the Amazon.com platform including full user features with shopping and payment experience',
     // OTHER PAGES
     profile: 'Profile Page',
-    experiences: 'Experiences Page',
     portfolio: 'Portfolio Page',
     contact: 'Contact me',
 
     // OTHER PAGES DUMMY TEXT
     text: 'This is the content styled component',
-
 
     profileDesc: `Passionate front-end developer, specialized in the ReactJS ecosystem
           and strong adept of the Agile/Scrum methodology, involved at the earliest

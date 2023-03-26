@@ -1,5 +1,5 @@
-import { DARK, LIGHT, BASE } from "../themes/index";
-import { THEMES } from "../theme";
+import { DARK, LIGHT, BASE } from '../themes/index';
+import { THEMES } from '../theme';
 
 export const getTheme = (themeName) => {
   switch (themeName) {
@@ -11,3 +11,14 @@ export const getTheme = (themeName) => {
       return BASE;
   }
 };
+
+export const fullstackWork = [
+  { width: '45%', src: 'commerce.png' },
+  { width: '45%', src: 'wave.png' },
+];
+
+export const uiWork = [
+  { width: '30%', src: 'trilio.png' },
+  { width: '30%', src: 'nexter.png' },
+  { width: '30%', src: 'map.png' },
+];

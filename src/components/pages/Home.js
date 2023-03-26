@@ -6,16 +6,15 @@ import {
   HomeContainer,
   TopHeader,
   SubHeader,
+  SubHeader2,
   Line,
 } from '../styled-components-styles/HomeStyles';
 
 import './Home.css';
 
 function Home() {
-
   return (
     <HomeContainer id="home">
-
       <HeaderContainer>
         <TopHeader>Faouzi Aitelhara</TopHeader>
         <Line />
@@ -23,7 +22,20 @@ function Home() {
         <br />
         <SubHeader>{t('subHeader2')}</SubHeader>
       </HeaderContainer>
-      <NavLink index="profile">{/* <DownLink>&darr;</DownLink> */}</NavLink>
+      <div
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          left: '50%',
+          display: 'flex',
+          flexDirection: 'column',
+          textAlign: 'center',
+          transform: 'translate(-50%, -50%)',
+        }}>
+        <SubHeader2>M.Sc in web application development</SubHeader2>
+        <div style={{ margin: '.35rem 0' }}></div>
+        <SubHeader2>Northumbria University | 2023</SubHeader2>
+      </div>
     </HomeContainer>
   );
 }

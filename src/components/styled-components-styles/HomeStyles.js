@@ -50,6 +50,18 @@ export const SubHeader = styled(MainHeader)`
   font-size: 1.75rem
   `}
 `;
+export const SubHeader2 = styled(MainHeader)`
+  font-style: italic;
+  font-size: 0.5rem;
+
+  ${respondTo.sm`
+  font-size: .75rem
+  `}
+
+  ${respondTo.s`
+  font-size: .85rem
+  `}
+`;
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -79,37 +91,37 @@ export const Video = styled.video`
   z-index: -1;
 `;
 
-export const DownLink = styled.button`
-display: block;
-position: absolute;
-bottom: 4rem !important;
-left: 50%
-color: ${({ theme }) => theme.color2};
-background: ${({ theme }) => theme.background2};
-padding: 1rem 2.5rem;
-border-radius: 10px;
-border: 0;
-transform: translateX(-50%);
-cursor: pointer;
+// export const DownLink = styled.button`
+// display: block;
+// position: absolute;
+// bottom: 4rem !important;
+// left: 50%
+// color: ${({ theme }) => theme.color2};
+// background: ${({ theme }) => theme.background2};
+// padding: 1rem 2.5rem;
+// border-radius: 10px;
+// border: 0;
+// transform: translateX(-50%);
+// cursor: pointer;
 
-&:hover {
-  background: #30bfbf;
-}
+// &:hover {
+//   background: #30bfbf;
+// }
 
-&:focus {
-  outline: none;
-  border: 0;
-}
+// &:focus {
+//   outline: none;
+//   border: 0;
+// }
 
-&:active {
-  background: ${({ theme }) => theme.background2};
-}
+// &:active {
+//   background: ${({ theme }) => theme.background2};
+// }
 
-${respondTo.sm`
-    font-size: 2rem;
-`}
+// ${respondTo.sm`
+//     font-size: 2rem;
+// `}
 
-${respondTo.s`
-    font-size: 3rem;
-`}
- `;
+// ${respondTo.s`
+//     font-size: 3rem;
+// `}
+//  `;

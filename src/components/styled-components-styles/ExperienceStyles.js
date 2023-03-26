@@ -40,20 +40,31 @@ export const ProjectImage = styled.div`
 export const WorkTitle = styled.h2`
   margin: 1rem 3rem 0 3rem;
   font-family: Overpass;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
   @media only screen and (max-width: 975px) {
     margin: 1rem 1.5rem 0 1.5rem;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
   }
 `;
 
-export const WorkSubTitle = styled.p`
+export const Project1 = styled.p`
+  margin: 1.25rem 3rem -0.85rem 3rem;
+  font-family: Overpass;
+  font-size: 2rem;
+
+  @media only screen and (max-width: 975px) {
+    margin: 1.25rem 3rem 0.25rem 3rem;
+    font-size: 1.15rem;
+  }
+`;
+
+export const WorkSubTitle = styled.hr`
   margin: 1rem 3rem 0 3rem;
   font-family: Overpass;
   font-size: 1rem;
   border-bottom: 3px solid;
-  padding-bottom: 8px;
+  margin-top: 0.5rem;
 
   @media only screen and (max-width: 975px) {
     margin: 1rem 1.5rem 0 1.5rem;

@@ -4,6 +4,7 @@ import Image from '../../styled-components/Image';
 
 import {
   Boxes,
+  Project1,
   WorkTitle,
   WorkSubTitle,
   ExpertiseContainer,
@@ -16,10 +17,11 @@ import { fullstackWork, uiWork } from '../../utils/utilities';
 function Experiences() {
   return (
     <Page id="experiences">
-      <WorkTitle>My Work |</WorkTitle>
-      <WorkSubTitle>
-        Here are various examples of my work from my personal portfolio
-      </WorkSubTitle>
+      <div style={{ display: 'flex', alignitems: 'center' }}>
+        <WorkTitle>Full Applications |</WorkTitle>
+        <Project1>E-Commerce fullstack applications</Project1>
+      </div>
+      <WorkSubTitle></WorkSubTitle>
       <ExpertiseContainer>
         {fullstackWork.map((item) => (
           <Boxes width={item.width}>
@@ -27,6 +29,11 @@ function Experiences() {
           </Boxes>
         ))}
       </ExpertiseContainer>
+      <div style={{ display: 'flex', alignitems: 'center' }}>
+        <WorkTitle>User Interfaces |</WorkTitle>
+        <Project1>User Interfaces &amp; Maps</Project1>
+      </div>
+      <WorkSubTitle></WorkSubTitle>
       <ExpertiseContainer>
         {uiWork.map((item) => (
           <Boxes width={item.width}>

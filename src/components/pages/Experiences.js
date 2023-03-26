@@ -1,6 +1,4 @@
 import React from 'react';
-
-import styled from 'styled-components';
 import Page from '../../styled-components/Page';
 import Image from '../../styled-components/Image';
 
@@ -19,15 +17,10 @@ import {
 
 import { fullstackWork, uiWork } from '../../utils/utilities';
 
-import { t } from '../../i18n/translate';
+// import { t } from '../../i18n/translate';
 
 function Experiences() {
-  const ImageLabel = styled.p`
-    font-size: 0.8rem;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-  `;
+
   return (
     <Page id="experiences">
       <HomeContainerLayout>

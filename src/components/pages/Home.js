@@ -1,5 +1,4 @@
 import React from 'react';
-import NavLink from '../../styled-components/NavLink';
 import { t } from '../../i18n/translate';
 import {
   HeaderContainer,

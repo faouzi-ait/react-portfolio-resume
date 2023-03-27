@@ -90,7 +90,7 @@ export const ExpertiseTitle = styled.div`
 
 export const Title = styled.div`
   width: 35%;
-  margin-top: 3%;
+  margin-bottom: -2%;
   padding: 0.5rem 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.25rem;

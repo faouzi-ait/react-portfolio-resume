@@ -23,11 +23,11 @@ export const OverlayContainer = styled.span`
   width: 100%;
   height: 0%;
   bottom: 5%;
-  background: #f0f0f0;
+  background: #000;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   opacity: 0;
-  transition: all 200ms linear;
+  transition: all 150ms linear;
   
   @media only screen and (max-width: 768px) {
     bottom: 0%;
@@ -40,7 +40,7 @@ export const OverlayContainer = styled.span`
   ${Boxes}:hover & {
     height: 96%;
     visibility: visible;
-    opacity: 0.9;
+    opacity: 0.6;
   }
 `;
 

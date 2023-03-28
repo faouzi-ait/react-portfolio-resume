@@ -24,7 +24,7 @@ function Portfolio() {
         <Title>My Portfolio</Title>
       </HomeContainerLayout>
       <ExpertiseContainer>
-        <Boxes width={'45%'}>
+        <Boxes width={'30%'}>
           <Image src={'commerce.png'} />
           <OverlayContainer>
             <p>
@@ -32,7 +32,7 @@ function Portfolio() {
             </p>
           </OverlayContainer>
         </Boxes>
-        <Boxes width={'45%'}>
+        <Boxes width={'30%'}>
           <Image src={'wave.png'} />
           <OverlayContainer>
             <p>
@@ -41,18 +41,32 @@ function Portfolio() {
             </p>
           </OverlayContainer>
         </Boxes>
+        <Boxes width={'30%'}>
+          <Image src={'new-style.png'} />
+          <OverlayContainer>
+            <p>
+              Fullstack E-Commerce applications for men and women cloting
+            </p>
+          </OverlayContainer>
+        </Boxes>
       </ExpertiseContainer>
       <ExpertiseContainer>
-        <Boxes width={'45%'}>
+        <Boxes width={'30%'}>
           <Image src={'nexter.png'} />
           <OverlayContainer>
             <p>Real estate presentation user interface</p>
           </OverlayContainer>
         </Boxes>
-        <Boxes width={'45%'}>
+        <Boxes width={'30%'}>
           <Image src={'map.png'} />
           <OverlayContainer>
             <p>Building filtering map in Zurich, Switzerland</p>
+          </OverlayContainer>
+        </Boxes>
+        <Boxes width={'30%'}>
+          <Image src={'trillio.png'} />
+          <OverlayContainer>
+            <p>Hotel resort flagship page</p>
           </OverlayContainer>
         </Boxes>
       </ExpertiseContainer>

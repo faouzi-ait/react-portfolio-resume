@@ -39,9 +39,9 @@ export default {
     // SIDE NAVIGATION
     homeLink: 'Accueil',
     profileLink: 'Expertise',
-    experiencesLink: 'Mes Projets',
-    portfolioLink: 'Portfolio',
-    contactLink: 'Contact',
+    experiencesLink: 'Portfolio',
+    portfolioLink: 'Experiences',
+    contactLink: 'Contacte',
     profileTitle: 'Mon Expertise',
 
     // MY EXPERTISE PAGE

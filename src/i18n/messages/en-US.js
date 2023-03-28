@@ -9,8 +9,8 @@ export default {
     // SIDE NAVIGATION
     homeLink: 'Home',
     profileLink: 'Expertise',
-    experiencesLink: 'My Work',
-    portfolioLink: 'Portfolio',
+    experiencesLink: 'Portfolio',
+    portfolioLink: 'Experiences',
     contactLink: 'Contact me',
     profileTitle: 'My Expertise',
 
@@ -40,7 +40,8 @@ export default {
       'Professionally, I have been focusing on banking and financial applications for a major british bank.',
     work_legend_1:
       'Full stack E-Commerce application based on the Amazon.com platform including full user features with shopping and payment experience',
-    // OTHER PAGES
+    
+      // OTHER PAGES
     profile: 'Profile Page',
     portfolio: 'Portfolio Page',
     contact: 'Contact me',

@@ -5,10 +5,9 @@ const ImageStyle = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  transition: all 300ms ease-in-out;
-
+  
   &:hover {
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 `;
 

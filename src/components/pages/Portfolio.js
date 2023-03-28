@@ -13,7 +13,7 @@ import {
   Title,
 } from '../styled-components-styles/ProfileStyles';
 
-import { fullstackWork, uiWork } from '../../utils/utilities';
+// import { fullstackWork, uiWork } from '../../utils/utilities';
 
 // import { t } from '../../i18n/translate';
 

@@ -6,7 +6,7 @@ import {
   Title,
 } from '../styled-components-styles/ProfileStyles';
 
-import { t } from '../../i18n/translate';
+// import { t } from '../../i18n/translate';
 
 function Portfolio() {
   return (

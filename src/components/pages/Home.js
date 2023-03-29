@@ -10,9 +10,6 @@ import {
   Line,
 } from '../styled-components-styles/HomeStyles';
 
-import './Home.css';
-// comment
-
 function Home() {
   return (
     <HomeContainer id="home">

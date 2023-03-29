@@ -4,7 +4,7 @@ import Page from '../../styled-components/Page';
 import {
   HomeContainerLayout,
   Title,
-} from '../styled-components-styles/ProfileStyles';
+} from '../styled-components-styles/Expertise';
 
 // import { t } from '../../i18n/translate';
 

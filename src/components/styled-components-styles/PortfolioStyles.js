@@ -26,9 +26,9 @@ export const OverlayContainer = styled.span`
   background: #000;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: all 150ms linear;
-  
+
   @media only screen and (max-width: 768px) {
     bottom: 0%;
   }
@@ -40,7 +40,6 @@ export const OverlayContainer = styled.span`
   ${Boxes}:hover & {
     height: 96%;
     visibility: visible;
-    opacity: 0.6;
   }
 `;
 

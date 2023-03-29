@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import TranslationProvider from './i18n/Provider';
 
 import Home from './components/pages/Home';
-import Profile from './components/pages/Profile';
+import Expertise from './components/pages/Expertise';
 import Portfolio from './components/pages/Portfolio';
 import Experiences from './components/pages/Experiences';
 import Contact from './components/pages/Contact';
@@ -31,7 +31,7 @@ function App() {
         <ToggleOptions />
         <MainLayoutContainer>
           <Home />
-          <Profile />
+          <Expertise />
           <Portfolio />
           <Experiences />
           <Contact />

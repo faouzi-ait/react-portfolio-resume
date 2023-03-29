@@ -11,7 +11,7 @@ import {
 import {
   HomeContainerLayout,
   Title,
-} from '../styled-components-styles/ProfileStyles';
+} from '../styled-components-styles/Expertise';
 
 // import { fullstackWork, uiWork } from '../../utils/utilities';
 
@@ -44,9 +44,7 @@ function Portfolio() {
         <Boxes width={'30%'}>
           <Image src={'new-style.png'} />
           <OverlayContainer>
-            <p>
-              Fullstack E-Commerce applications for men and women cloting
-            </p>
+            <p>Fullstack E-Commerce applications for men and women cloting</p>
           </OverlayContainer>
         </Boxes>
       </ExpertiseContainer>

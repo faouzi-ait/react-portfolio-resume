@@ -30,19 +30,19 @@ export const MainHeader = styled.span`
 export const TopHeader = styled(MainHeader)`
   font-style: italic;
   margin-top: -5rem;
-
+  
   ${respondTo.sm`
-  font-size: 1.75rem
-  `}
+   font-size: 2rem;
+   `};
 
   ${respondTo.s`
-    font-size: 3.5rem
-`}
+  font-size: 3.5rem;
+  `};
 `;
 
 export const SubHeader = styled(MainHeader)`
   font-style: italic;
-  // margin-top: -2rem;
+
   ${respondTo.sm`
   font-size: 1rem
   `}
@@ -51,16 +51,17 @@ export const SubHeader = styled(MainHeader)`
   font-size: 1.75rem
   `}
 `;
-export const SubHeader2 = styled(MainHeader)`
-  font-style: italic;
+export const SubHeader2 = styled(SubHeader)`
+  font-style: normal;
   font-size: 0.5rem;
+  letter-spacing: 3px;
 
   ${respondTo.sm`
-  font-size: .75rem;
-  `}
+     font-size: .8rem;
+    `}
 
   ${respondTo.s`
-  font-size: .85rem
+  font-size: 1rem;
   `}
 `;
 
@@ -74,12 +75,8 @@ export const SubHeader2Container = styled.div`
   text-align: center;
   transform: translate(-50%, -50%);
 
-  ${respondTo.sm`
-
-  `}
-
-  ${respondTo.s`
-  `}
+  ${respondTo.sm``}
+  ${respondTo.s``}
 `;
 
 export const HeaderContainer = styled.div`
@@ -94,53 +91,3 @@ export const Line = styled.hr`
   width: 85%;
   margin-bottom: 2rem;
 `;
-
-export const HeroContainer = styled.div`
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.116);
-  width: 100vw;
-  height: 100vh;
-`;
-
-export const Video = styled.video`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-`;
-
-// export const DownLink = styled.button`
-// display: block;
-// position: absolute;
-// bottom: 4rem !important;
-// left: 50%
-// color: ${({ theme }) => theme.color2};
-// background: ${({ theme }) => theme.background2};
-// padding: 1rem 2.5rem;
-// border-radius: 10px;
-// border: 0;
-// transform: translateX(-50%);
-// cursor: pointer;
-
-// &:hover {
-//   background: #30bfbf;
-// }
-
-// &:focus {
-//   outline: none;
-//   border: 0;
-// }
-
-// &:active {
-//   background: ${({ theme }) => theme.background2};
-// }
-
-// ${respondTo.sm`
-//     font-size: 2rem;
-// `}
-
-// ${respondTo.s`
-//     font-size: 3rem;
-// `}
-//  `;

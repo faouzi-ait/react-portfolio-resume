@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import {
   Boxes,
   Title,
@@ -12,14 +11,12 @@ import {
   ExpertiseTitle,
   ExpertiseContainer,
   HomeContainerLayout,
-} from '../styled-components-styles/ProfileStyles';
+} from '../styled-components-styles/Expertise';
 
 import { t } from '../../i18n/translate';
 
 function Profile() {
-  const st = useSelector((state) => state.lightTheme.state);
-
-  console.log(st);
+  // const st = useSelector((state) => state.lightTheme.state);
 
   return (
     <HomeContainer id="profile">

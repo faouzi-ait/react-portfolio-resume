@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+// import { respondTo } from '../../styled-components/ResponsiveUtils';
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -10,7 +11,6 @@ export const HomeContainer = styled.div`
 
 export const ProfileDesc = styled.p`
   position: relative;
-  // width: 70%;
   margin-top: -2rem;
   padding: 0 3rem;
   font-family: 'Overpass', sans-serif;
@@ -27,22 +27,24 @@ export const ProfileDesc = styled.p`
     margin-right: 1rem;
   }
 
+  @media only screen and (max-width: 400px) {
+    font-size: 1rem;
+    padding: 0 1rem;
+
+    &:before {
+      font-size: 6rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   @media only screen and (max-width: 975px) {
+    padding: 0 1rem;
     font-size: 1.25rem;
 
     &:before {
       top: 40px;
       margin-right: 0.5rem;
       font-size: 6rem;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1.25rem;
-
-    &:before {
-      font-size: 6rem;
-      margin-right: 0.5rem;
     }
   }
 `;

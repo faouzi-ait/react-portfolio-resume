@@ -4,6 +4,7 @@ import Image from '../../styled-components/Image';
 
 import {
   Boxes,
+  ImageStyle,
   OverlayContainer,
   ExpertiseContainer,
 } from '../styled-components-styles/PortfolioStyles';
@@ -25,7 +26,9 @@ function Portfolio() {
       </HomeContainerLayout>
       <ExpertiseContainer>
         <Boxes width={'30%'}>
-          <Image src={'commerce.png'} />
+          <div>
+            <ImageStyle src={'commerce.png'} />
+          </div>
           <OverlayContainer>
             <p>
               Fullstack E-Commerce applications based on the Amazon experience

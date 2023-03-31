@@ -23,21 +23,21 @@ export const MainHeader = styled.span`
   font-family: 'Varela', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   z-index: 9999;
 `;
 
 export const TopHeader = styled(MainHeader)`
   font-style: italic;
   margin-top: -5rem;
-  
-  ${respondTo.sm`
-   font-size: 2rem;
-   `};
 
-  ${respondTo.s`
-  font-size: 3.5rem;
-  `};
+  @media (min-width: 601px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2.25rem;
+  }
 `;
 
 export const SubHeader = styled(MainHeader)`
@@ -51,6 +51,7 @@ export const SubHeader = styled(MainHeader)`
   font-size: 1.75rem
   `}
 `;
+
 export const SubHeader2 = styled(SubHeader)`
   font-style: normal;
   font-size: 0.5rem;
@@ -74,17 +75,18 @@ export const SubHeader2Container = styled.div`
   flex-direction: column;
   text-align: center;
   transform: translate(-50%, -50%);
-
-  ${respondTo.sm``}
-  ${respondTo.s``}
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 62%;
+  width: 82%;
   text-align: center;
+
+  ${respondTo.sm`
+  margin-bottom: 4rem;
+  `}
 `;
 
 export const Line = styled.hr`

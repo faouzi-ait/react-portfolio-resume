@@ -16,7 +16,7 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'commerce.png',
-    label: 'Fullstack E-Commerce applications based on the Amazon experience',
+    label: 'Fullstack E-Commerce based on the Amazon UX',
     github: 'github.svg',
     altGithub: 'github',
     web: 'mgn.png',
@@ -28,7 +28,7 @@ export const fullstackWork = [
     width: '30%',
     src: 'wave.png',
     label:
-      'Fullstack E-Commerce applications specialized in guitards of all kind',
+      'Fullstack E-Commerce based in guitards of all kind',
     github: 'github.svg',
     altGithub: 'github',
     web: 'mgn.png',
@@ -40,7 +40,7 @@ export const fullstackWork = [
     width: '30%',
     src: 'new-style.png',
     
-    label: 'Fullstack E-Commerce applications for men and women cloting',
+    label: 'Fullstack E-Commerce for men and women cloting',
     github: 'github.svg',
     altGithub: 'github',
     web: 'mgn.png',

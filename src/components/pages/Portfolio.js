@@ -5,6 +5,7 @@ import {
   Boxes,
   ImageStyle,
   ProjectLogo,
+  ProjectDesc,
   ImageContainer,
   OverlayContainer,
   ExpertiseContainer,
@@ -33,7 +34,7 @@ function Portfolio() {
             </div>
 
             <OverlayContainer>
-              <div style={{ padding: '1rem' }}>{item.label}</div>
+              <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
                 <ProjectLogo
                   src={'github.svg'}
@@ -59,7 +60,7 @@ function Portfolio() {
             </div>
 
             <OverlayContainer>
-              <div style={{ padding: '1rem' }}>{item.label}</div>
+              <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
                 <ProjectLogo
                   src={'github.svg'}

@@ -8,6 +8,13 @@ export const ImageContainer = styled.div`
   height: 25%;
   margin: 0 auto;
   padding: 1rem;
+
+  @media screen and (min-width: 501px) and (max-width: 1100px) {
+    margin-top: -1.5rem;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 500px) {
+  }
 `;
 
 export const ImageStyle = styled.img`
@@ -33,7 +40,7 @@ export const Boxes = styled.div`
   position: relative;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  margin: 1.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
   border-radius: 4px;
   overflow: hidden;
   transition: all 100ms linear;
@@ -65,10 +72,24 @@ export const OverlayContainer = styled.span`
   border-bottom-right-radius: 3px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 150ms linear;
+  user-select: none;
 
   ${Boxes}:hover & {
     height: 100%;
     visibility: visible;
+  }
+`;
+
+export const ProjectDesc = styled.p`
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: 601px) and (max-width: 996px) {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 `;
 

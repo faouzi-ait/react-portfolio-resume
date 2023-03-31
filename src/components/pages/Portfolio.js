@@ -1,10 +1,11 @@
 import React from 'react';
 import Page from '../../styled-components/Page';
-import Image from '../../styled-components/Image';
 
 import {
   Boxes,
   ImageStyle,
+  ProjectLogo,
+  ImageContainer,
   OverlayContainer,
   ExpertiseContainer,
 } from '../styled-components-styles/PortfolioStyles';
@@ -14,7 +15,7 @@ import {
   Title,
 } from '../styled-components-styles/Expertise';
 
-// import { fullstackWork, uiWork } from '../../utils/utilities';
+import { fullstackWork, uiWork } from '../../utils/utilities';
 
 // import { t } from '../../i18n/translate';
 
@@ -25,51 +26,55 @@ function Portfolio() {
         <Title>My Portfolio</Title>
       </HomeContainerLayout>
       <ExpertiseContainer>
-        <Boxes width={'30%'}>
-          <div>
-            <ImageStyle src={'commerce.png'} />
-          </div>
-          <OverlayContainer>
-            <p>
-              Fullstack E-Commerce applications based on the Amazon experience
-            </p>
-          </OverlayContainer>
-        </Boxes>
-        <Boxes width={'30%'}>
-          <Image src={'wave.png'} />
-          <OverlayContainer>
-            <p>
-              Fullstack E-Commerce applications specialized in guitards of all
-              kind
-            </p>
-          </OverlayContainer>
-        </Boxes>
-        <Boxes width={'30%'}>
-          <Image src={'new-style.png'} />
-          <OverlayContainer>
-            <p>Fullstack E-Commerce applications for men and women cloting</p>
-          </OverlayContainer>
-        </Boxes>
+        {fullstackWork.map((item) => (
+          <Boxes width={item.width}>
+            <div>
+              <ImageStyle src={item.src} />
+            </div>
+
+            <OverlayContainer>
+              <div style={{ padding: '1rem' }}>{item.label}</div>
+              <ImageContainer>
+                <ProjectLogo
+                  src={'github.svg'}
+                  alt={item.altGithub}
+                  onClick={() => window.open(item.githubUrl)}
+                />
+                <ProjectLogo
+                  src={item.web}
+                  alt={item.altWeb}
+                  onClick={() => window.open(item.webUrl)}
+                />
+              </ImageContainer>
+            </OverlayContainer>
+          </Boxes>
+        ))}
       </ExpertiseContainer>
+
       <ExpertiseContainer>
-        <Boxes width={'30%'}>
-          <Image src={'nexter.png'} />
-          <OverlayContainer>
-            <p>Real estate presentation user interface</p>
-          </OverlayContainer>
-        </Boxes>
-        <Boxes width={'30%'}>
-          <Image src={'map.png'} />
-          <OverlayContainer>
-            <p>Building filtering map in Zurich, Switzerland</p>
-          </OverlayContainer>
-        </Boxes>
-        <Boxes width={'30%'}>
-          <Image src={'trillio.png'} />
-          <OverlayContainer>
-            <p>Hotel resort flagship page</p>
-          </OverlayContainer>
-        </Boxes>
+        {uiWork.map((item) => (
+          <Boxes width={item.width}>
+            <div>
+              <ImageStyle src={item.src} />
+            </div>
+
+            <OverlayContainer>
+              <div style={{ padding: '1rem' }}>{item.label}</div>
+              <ImageContainer>
+                <ProjectLogo
+                  src={'github.svg'}
+                  alt={item.altGithub}
+                  onClick={() => window.open(item.githubUrl)}
+                />
+                <ProjectLogo
+                  src={item.web}
+                  alt={item.altWeb}
+                  onClick={() => window.open(item.webUrl)}
+                />
+              </ImageContainer>
+            </OverlayContainer>
+          </Boxes>
+        ))}
       </ExpertiseContainer>
     </Page>
   );

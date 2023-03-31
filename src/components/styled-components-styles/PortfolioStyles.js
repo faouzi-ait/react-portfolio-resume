@@ -1,9 +1,32 @@
+import React from 'react';
 import styled from 'styled-components';
+
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  margin: 0 auto;
+  padding: 1rem;
+`;
 
 export const ImageStyle = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 4px;
+`;
+
+export const LogoImage = styled.div`
+  width: 13%;
+  margin-left: 1rem;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms linear;
+
+  &:hover {
+    scale: 1.15;
+  }
 `;
 
 export const Boxes = styled.div`
@@ -37,19 +60,11 @@ export const OverlayContainer = styled.span`
   width: 100%;
   height: 0%;
   bottom: 0%;
-  background: #000;
+  color: #fff;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 150ms linear;
-
-  // @media only screen and (max-width: 768px) {
-  //   bottom: 0%;
-  // }
-
-  // @media only screen and (max-width: 975px) {
-  //   bottom: 0%;
-  // }
 
   ${Boxes}:hover & {
     height: 100%;
@@ -66,3 +81,11 @@ export const ExpertiseContainer = styled.div`
     align-items: center;
   }
 `;
+
+export const ProjectLogo = ({ src, alt, ...rest }) => {
+  return (
+    <LogoImage {...rest}>
+      <img src={src} alt={alt} width="100%" />
+    </LogoImage>
+  );
+};

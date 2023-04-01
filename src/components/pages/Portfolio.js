@@ -14,7 +14,7 @@ import {
 import {
   HomeContainerLayout,
   Title,
-} from '../styled-components-styles/Expertise';
+} from '../styled-components-styles/ExpertiseStyles';
 
 import { fullstackWork, uiWork } from '../../utils/utilities';
 

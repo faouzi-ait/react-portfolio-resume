@@ -5,3 +5,57 @@
     right: 0;
     background:pink;
 }
+
+/* ACCORDEON STYLES */
+.accordion {
+    max-width: 85%;
+    margin: 2rem auto;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.accordion-item {
+    margin: 1rem 0;
+}
+
+.accordion-item:nth-child(1) {
+    padding-top: 3rem;
+}
+
+  @media only screen and (max-width: 1100px) {
+    .accordion {
+        max-width: 90%;
+        /* margin: 2rem auto; */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* .accordion {
+        max-width: 65%;
+        margin: 2rem auto;
+    } */
+  }
+
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: italic;
+    letter-spacing: .1px;
+    cursor: pointer;
+    background-color: #57a4b4;
+}
+
+.accordion-title:hover {
+    background-color: #3ab4cc;
+}
+
+.accordion-title,
+.accordion-content {
+    padding: 1rem;
+}
+
+.accordion-content {
+    line-height: 22px;
+  background-color: #9fe3f0;
+}

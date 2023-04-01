@@ -11,7 +11,7 @@ import {
   ExpertiseTitle,
   ExpertiseContainer,
   HomeContainerLayout,
-} from '../styled-components-styles/Expertise';
+} from '../styled-components-styles/ExpertiseStyles';
 
 import { t } from '../../i18n/translate';
 

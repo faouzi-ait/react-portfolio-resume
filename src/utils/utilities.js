@@ -27,8 +27,7 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'wave.png',
-    label:
-      'Fullstack E-Commerce based in guitards of all kind',
+    label: 'Fullstack E-Commerce based in guitards of all kind',
     github: 'github.svg',
     altGithub: 'github',
     web: 'mgn.png',
@@ -39,7 +38,7 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'new-style.png',
-    
+
     label: 'Fullstack E-Commerce for men and women cloting',
     github: 'github.svg',
     altGithub: 'github',
@@ -86,5 +85,24 @@ export const uiWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/Trillo',
     webUrl: 'https://trillo-reservation.netlify.app',
+  },
+];
+
+export const accordionData = [
+  {
+    title: 'React Developer | NatWest Group | July 2021 - Present',
+    content: `Currently working on rebuilding the existing Financials and Dashboard applications along with new features, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.`,
+    env: `ReactJS v17+ (Hooks), Redux/Redux Saga, JavaScript ES6+, JSX/HTML, CSS, SASS, Styled Component, React-Table, React-Chart-JS, TreeMap, Material-UI, API using REST Architecture.`,
+  },
+  {
+    title: 'React Developer | RiskCare Financial | October 2020 - June 2021',
+    content: `Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.`,
+    env: `ReactJS v16+ (Hooks), Redux/Redux Saga, JavaScript ES6+, JSX/HTML, CSS, SASS, Styled Component, API using REST Architecture.`,
+  },
+  {
+    title:
+      'React Developer | ST-Groupe Consultancy | September 2018 - February 2020',
+    content: `Development of a back-office application for client management and day-to-day operational tasks for travel insurance for the web and mobile tablet platform.`,
+    env: `HTML5, CSS3, SASS, JavaScript (ES6+), Webservices Rest, Git/GitHub, VS Code, Postman, React JS (Hooks), React Router, Authentication & Authorization (JWT), Styled Components, Redux, Redux- Saga, Context API.`,
   },
 ];

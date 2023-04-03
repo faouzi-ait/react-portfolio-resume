@@ -49,7 +49,7 @@ export default {
     librariesTitle: 'Librairies',
     librariesDesc: 'Les librairies qui composent ma stack:',
     libraries:
-      'ReactJS v16+ (Hooks), Styled Component, React Hook Form, Responsive Design, Material-UI, React-ChartJS, React-Table.',
+      'ReactJS v16+ (Hooks), useMemo, useCallback, Styled Component, React Hook Form, Responsive Design, Material-UI, React-ChartJS, React-Table.',
 
     statesTitle: 'Gestion des données',
     statesDesc:

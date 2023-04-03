@@ -95,6 +95,8 @@ export const accordionData = [
     env: [
       'ReactJS v17+',
       'React Hooks',
+      'useMemo',
+      'useCallback',
       'Redux',
       'Redux Saga',
       'JavaScript ES6+',

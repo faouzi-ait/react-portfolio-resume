@@ -54,7 +54,7 @@ export const SubHeader = styled(MainHeader)`
 
 export const SubHeader2 = styled(SubHeader)`
   font-style: normal;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
 
   ${respondTo.sm`

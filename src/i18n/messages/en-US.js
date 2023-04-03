@@ -3,7 +3,8 @@ import { LOCALES } from '../constants';
 export default {
   [LOCALES.ENGLISH]: {
     // HOME PAGE
-    subHeader: 'Front End Developer',
+    subHeader: 'Senior Front End Developer',
+    subHeaderb: '4+ years of experience',
     subHeader2: 'React & Redux',
 
     // SIDE NAVIGATION
@@ -40,8 +41,8 @@ export default {
       'Professionally, I have been focusing on banking and financial applications for a major british bank.',
     work_legend_1:
       'Full stack E-Commerce application based on the Amazon.com platform including full user features with shopping and payment experience',
-    
-      // OTHER PAGES
+
+    // OTHER PAGES
     profile: 'Profile Page',
     portfolio: 'Portfolio Page',
     contact: 'Contact me',

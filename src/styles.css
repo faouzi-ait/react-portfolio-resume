@@ -8,7 +8,7 @@
 
 /* ACCORDEON STYLES */
 .accordion {
-    max-width: 85%;
+    max-width: 80%;
     margin: 2rem auto;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -18,21 +18,20 @@
 }
 
 .accordion-item:nth-child(1) {
-    padding-top: 3rem;
+    padding-top: .5rem;
 }
 
   @media only screen and (max-width: 1100px) {
     .accordion {
-        max-width: 90%;
+        max-width: 80%;
         /* margin: 2rem auto; */
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    /* .accordion {
-        max-width: 65%;
-        margin: 2rem auto;
-    } */
+  @media only screen and (max-width: 1100px) {
+.accordion-item:nth-child(1) {
+    padding-top: 0;
+}
   }
 
 .accordion-title {
@@ -40,10 +39,17 @@
     flex-direction: row;
     justify-content: space-between;
     font-weight: bold;
-    font-size: italic;
+    font-size: 1.3rem;
     letter-spacing: .1px;
     cursor: pointer;
-    background-color: #57a4b4;
+    background-color: #91d3e2;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .accordion-title {
+        font-size: 1.1rem;
+    }   
 }
 
 .accordion-title:hover {
@@ -53,9 +59,10 @@
 .accordion-title,
 .accordion-content {
     padding: 1rem;
+    color: #000;
 }
 
 .accordion-content {
     line-height: 22px;
-  background-color: #9fe3f0;
+    background-color: #9fe3f0;
 }

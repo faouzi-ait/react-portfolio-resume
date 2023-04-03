@@ -18,6 +18,7 @@ function Home() {
         <Line />
         <SubHeader>{t('subHeader')}</SubHeader>
         <SubHeader>{t('subHeader2')}</SubHeader>
+        <SubHeader>{t('subHeaderb')}</SubHeader>
       </HeaderContainer>
       <SubHeader2Container>
         <SubHeader2>M.Sc in web application development</SubHeader2>

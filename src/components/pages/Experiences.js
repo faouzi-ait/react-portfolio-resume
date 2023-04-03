@@ -18,30 +18,35 @@ function Portfolio() {
     return (
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          <div style={{ fontSize: '1.15rem' }}>{title}</div>
+          <div>{title}</div>
           <div>{isActive ? '-' : '+'}</div>
         </div>
         {isActive && (
           <div className="accordion-content">
-            <div
-              style={{
-                fontSize: '1.15rem',
-                fontWeight: 'bold',
-                marginBottom: '.5rem',
-              }}>
-              Project Overview:
-            </div>
             <div>{content}</div>
             <br />
             <div
               style={{
-                fontSize: '1.15rem',
+                fontSize: '.15rem',
                 fontWeight: 'bold',
-                marginBottom: '.5rem',
-              }}>
-              Technical Environment:
+              }}></div>
+            <div>
+              {env.map((item) => (
+                <span
+                  style={{
+                    display: 'inline-block',
+                    marginRight: '.5rem',
+                    marginBottom: '.5rem',
+                    padding: '.1rem .4rem',
+                    fontSize: '.85rem',
+                    borderRadius: '10px',
+                    border: '1px solid #3ab4cc',
+                    backgroundColor: '#91d3e2',
+                  }}>
+                  {item}
+                </span>
+              ))}
             </div>
-            <div>{env}</div>
           </div>
         )}
       </div>

@@ -27,7 +27,7 @@ function ToggleOptions() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    document.addEventListener('scroll', (e) => {
+    document.addEventListener('scroll', () => {
       window.pageYOffset > 600 ? setIsVisible(true) : setIsVisible(false);
     });
   }, []);

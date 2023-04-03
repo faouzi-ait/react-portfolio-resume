@@ -7,7 +7,8 @@ export default {
 
     text: 'Ceci est le contenu du composant stylisé',
 
-    subHeader: 'Développeur Front End',
+    subHeader: 'Développeur Front End Senior',
+    subHeaderb: "4 ans d'expérience",
     subHeader2: 'React & Redux',
 
     profile: 'Mon Profile',
@@ -45,14 +46,14 @@ export default {
     profileTitle: 'Mon Expertise',
 
     // MY EXPERTISE PAGE
-    librariesTitle: 'Library',
-    librariesDesc: 'Les libraries qui composent ma stack:',
+    librariesTitle: 'Librairies',
+    librariesDesc: 'Les librairies qui composent ma stack:',
     libraries:
       'ReactJS v16+ (Hooks), Styled Component, React Hook Form, Responsive Design, Material-UI, React-ChartJS, React-Table.',
 
-    statesTitle: 'Géstion des données',
+    statesTitle: 'Gestion des données',
     statesDesc:
-      'Les libraries suivantes sont aussi utilisés pour gérer les données au niveau applicatif:',
+      'Les librairies suivantes sont aussi utilisées pour gérer les données au niveau applicatif:',
     states: 'Redux, Redux Saga, Redux Persist, Context API.',
 
     developmentTitle: 'Développement',

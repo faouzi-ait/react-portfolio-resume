@@ -3,7 +3,7 @@ import { LOCALES } from '../constants';
 export default {
   [LOCALES.ENGLISH]: {
     // HOME PAGE
-    subHeader: 'Senior Front End Developer',
+    subHeader: 'Front End Developer',
     subHeaderb: '4+ years of experience',
     subHeader2: 'React & Redux',
 

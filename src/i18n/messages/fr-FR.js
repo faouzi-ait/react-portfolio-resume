@@ -7,7 +7,7 @@ export default {
 
     text: 'Ceci est le contenu du composant stylisé',
 
-    subHeader: 'Développeur Front End Senior',
+    subHeader: 'Développeur Front End',
     subHeaderb: "4 ans d'expérience",
     subHeader2: 'React & Redux',
 

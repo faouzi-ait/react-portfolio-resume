@@ -23,12 +23,11 @@ export const MainHeader = styled.span`
   font-family: 'Varela', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   z-index: 9999;
 `;
 
 export const TopHeader = styled(MainHeader)`
-  font-style: italic;
   margin-top: -5rem;
 
   @media (min-width: 601px) {
@@ -41,7 +40,6 @@ export const TopHeader = styled(MainHeader)`
 `;
 
 export const SubHeader = styled(MainHeader)`
-  font-style: italic;
 
   ${respondTo.sm`
   font-size: 1rem
@@ -54,16 +52,12 @@ export const SubHeader = styled(MainHeader)`
 
 export const SubHeader2 = styled(SubHeader)`
   font-style: normal;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-
-  ${respondTo.sm`
-     font-size: .8rem;
-    `}
-
-  ${respondTo.s`
   font-size: 1rem;
-  `}
+  letter-spacing: 1px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: .75rem;
+  }
 `;
 
 export const SubHeader2Container = styled.div`

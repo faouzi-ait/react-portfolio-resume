@@ -30,7 +30,7 @@ function Profile() {
       <ExpertiseContainer>
         <Boxes>
           <ExpertiseTitle>
-            <img src="react-2.svg" alt="react" width="40px" />
+            <img src="../react-2.svg" alt="react" width="40px" />
             <TitleMargin>{t('librariesTitle')}</TitleMargin>
           </ExpertiseTitle>
           <Expertise>{t('librariesDesc')}</Expertise>
@@ -39,7 +39,7 @@ function Profile() {
         </Boxes>
         <Boxes>
           <ExpertiseTitle>
-            <img src="redux.svg" alt="redux" width="40px" />
+            <img src="../redux.svg" alt="redux" width="40px" />
             <TitleMargin>{t('statesTitle')}</TitleMargin>
           </ExpertiseTitle>
           <Expertise>{t('statesDesc')}</Expertise>
@@ -48,7 +48,7 @@ function Profile() {
         </Boxes>
         <Boxes>
           <ExpertiseTitle>
-            <img src="nodejs.svg" alt="js" width="40px" />
+            <img src="../nodejs.svg" alt="js" width="40px" />
             <TitleMargin>{t('developmentTitle')}</TitleMargin>
           </ExpertiseTitle>
           <Expertise>{t('developmentDesc')}</Expertise>

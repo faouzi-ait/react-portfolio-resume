@@ -27,22 +27,22 @@ function Portfolio() {
         <Title>My Portfolio</Title>
       </HomeContainerLayout>
       <ExpertiseContainer>
-        {fullstackWork.map((item) => (
-          <Boxes width={item.width}>
+        {fullstackWork.map((item, i) => (
+          <Boxes width={item.width} key={i}>
             <div>
-              <ImageStyle src={item.src} />
+              <ImageStyle src={`../${item.src}`} />
             </div>
 
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
                 <ProjectLogo
-                  src={'github.svg'}
+                  src={`../${item.github}`}
                   alt={item.altGithub}
                   onClick={() => window.open(item.githubUrl)}
                 />
                 <ProjectLogo
-                  src={item.web}
+                  src={`../${item.web}`}
                   alt={item.altWeb}
                   onClick={() => window.open(item.webUrl)}
                 />
@@ -53,22 +53,22 @@ function Portfolio() {
       </ExpertiseContainer>
 
       <ExpertiseContainer>
-        {uiWork.map((item) => (
-          <Boxes width={item.width}>
+        {uiWork.map((item, i) => (
+          <Boxes width={item.width} key={i}>
             <div>
-              <ImageStyle src={item.src} />
+              <ImageStyle src={`../${item.src}`} />
             </div>
 
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
                 <ProjectLogo
-                  src={'github.svg'}
+                  src={`../${item.github}`}
                   alt={item.altGithub}
                   onClick={() => window.open(item.githubUrl)}
                 />
                 <ProjectLogo
-                  src={item.web}
+                  src={`../${item.web}`}
                   alt={item.altWeb}
                   onClick={() => window.open(item.webUrl)}
                 />

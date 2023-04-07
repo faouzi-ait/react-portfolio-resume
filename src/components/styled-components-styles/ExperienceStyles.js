@@ -6,7 +6,7 @@ export const Accordion = styled.div`
   font-family: 'Be Vietnam Pro', sans-serif;
   margin: 5rem auto;
 
-  @media only screen and (max-width: 1100pw) {
+  @media only screen and (max-width: 1100px) {
     max-width: 90%;
   }
 `;

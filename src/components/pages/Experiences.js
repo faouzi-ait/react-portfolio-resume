@@ -31,8 +31,8 @@ function Portfolio() {
                 fontWeight: 'bold',
               }}></div>
             <div>
-              {env.map((item) => (
-                <AccordionLabels>{item}</AccordionLabels>
+              {env.map((item, i) => (
+                <AccordionLabels key={i}>{item}</AccordionLabels>
               ))}
             </div>
           </div>
@@ -48,7 +48,7 @@ function Portfolio() {
       </HomeContainerLayout>
       <div className="accordion">
         {accordionData.map(({ title, content, env }) => (
-          <Accordion title={title} content={content} env={env} />
+          <Accordion title={title} content={content} env={env} key={title} />
         ))}
       </div>
     </Page>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { DARK, LIGHT, BASE } from '../themes/index';
 import { THEMES } from '../theme';
 
@@ -17,7 +18,7 @@ export const fullstackWork = [
     width: '30%',
     src: 'commerce.png',
     label: 'Fullstack E-Commerce based on the Amazon UX',
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -28,7 +29,7 @@ export const fullstackWork = [
     width: '30%',
     src: 'wave.png',
     label: 'Fullstack E-Commerce based in guitards of all kind',
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -40,7 +41,7 @@ export const fullstackWork = [
     src: 'new-style.png',
 
     label: 'Fullstack E-Commerce for men and women cloting',
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -55,7 +56,7 @@ export const uiWork = [
     src: 'nexter.png',
     label: 'Real estate presentation user interface',
 
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -67,7 +68,7 @@ export const uiWork = [
     src: 'map.png',
     label: 'Building filtering map in Zurich, Switzerland',
 
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -79,7 +80,7 @@ export const uiWork = [
     src: 'trillio.png',
     label: 'Hotel resort website for holiday makers',
 
-    github: 'github.svg',
+    github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
     altWeb: 'mgn',
@@ -150,3 +151,34 @@ export const accordionData = [
     ],
   },
 ];
+
+export const createField = (
+  type,
+  name,
+  placeHolder,
+  errors,
+  register,
+  errorLabel
+) => {
+  return (
+    <div>
+      <input
+        type={type}
+        name={name}
+        placeholder={placeHolder}
+        className={errors?.name ? 'error' : ''}
+        autoComplete="off"
+        ref={register({ required: true })}
+      />
+      {errors?.name && errors?.name?.type === 'required' && (
+        <p className="login__error">{errorLabel}</p>
+      )}
+    </div>
+  );
+};
+
+export const resetMessage = (setError) => {
+  setTimeout(() => {
+    setError('');
+  }, 4000);
+};

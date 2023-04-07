@@ -85,7 +85,7 @@ function Contact() {
             </span>
           </div>
           <div className="contact-linkedin">
-            Take a look at my LinkedIn profile
+            Take a look at my LinkedIn profile{' '}
             <a
               href="https://www.linkedin.com/in/faouzia/"
               target="_blank"

@@ -18,7 +18,6 @@ function Contact() {
   // const { register, handleSubmit, errors } = useForm();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [message, setMessage] = useState('');
   const [confirmation, setConfirmation] = useState('');
 
   const {

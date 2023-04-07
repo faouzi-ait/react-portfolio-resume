@@ -75,17 +75,23 @@ function Contact() {
             <h1 className="h1">
               Let's chat.
               <br />
-              <span className='subheader'>
-                Tell me about your project
-              </span>
+              <span className="subheader">Tell me about your project</span>
             </h1>
             <span className="contact-font">
-              Let's build something together <span role="img">🤟</span>
+              Let's build something together{' '}
+              <span role="img" aria-label="together">
+                🤟
+              </span>
             </span>
           </div>
           <div className="contact-linkedin">
             Take a look at my LinkedIn profile
-            <a href="https://www.linkedin.com/in/faouzia/" target='_blank'> right here</a>
+            <a
+              href="https://www.linkedin.com/in/faouzia/"
+              target="_blank"
+              rel="noopener noreferrer">
+              right here
+            </a>
           </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="form" noValidate>

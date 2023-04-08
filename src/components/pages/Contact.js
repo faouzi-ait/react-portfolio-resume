@@ -86,13 +86,30 @@ function Contact() {
               </span>
             </span>
           </div>
+          <div
+            style={{ margin: '1rem 0 0 0', borderBottom: '5px solid' }}></div>
           <div className="contact-linkedin">
             Take a look at my LinkedIn profile{' '}
             <a
               href="https://www.linkedin.com/in/faouzia/"
               target="_blank"
               rel="noopener noreferrer">
-              right here
+              here
+            </a>
+          </div>
+          <div className="contact-linkedin">
+            Here is my GitHub repositories{' '}
+            <a
+              href="https://github.com/faouzi-ait"
+              target="_blank"
+              rel="noopener noreferrer">
+              here
+            </a>
+          </div>
+          <div className="contact-linkedin">
+            Feel free to download my resume in a PDF format{' '}
+            <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
+              here
             </a>
           </div>
         </div>

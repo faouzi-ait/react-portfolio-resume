@@ -133,7 +133,7 @@ export const accordionData = [
   },
   {
     title:
-      'React Developer | ST-Groupe Consultancy | September 2018 - February 2020',
+      'React Developer | ST-Groupe Consultancy | September 2018 - October 2020',
     content: `Development of a back-office application for client management and day-to-day operational tasks for travel insurance for the web and mobile tablet platform.`,
     env: [
       'React v17+',

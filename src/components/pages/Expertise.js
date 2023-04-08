@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Boxes,
   Title,
-  Separator,
+  // Separator,
   Expertise,
   TitleMargin,
   ProfileDesc,
@@ -25,7 +25,7 @@ function Profile() {
       </HomeContainerLayout>
       <ProfileDesc>{t('profileDesc')}</ProfileDesc>
 
-      <Separator />
+      {/* <Separator /> */}
 
       <ExpertiseContainer>
         <Boxes>

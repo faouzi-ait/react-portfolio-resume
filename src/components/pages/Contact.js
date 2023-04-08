@@ -24,6 +24,7 @@ function Contact() {
     handleSubmit,
     control,
     formState: { errors },
+    setValue,
     reset,
   } = useForm({
     mode: 'onBlur',
@@ -55,7 +56,8 @@ function Contact() {
         setConfirmation(result.data.message);
         setIsLoading(false);
         resetMessage(setConfirmation);
-        reset({});
+        setValue('message', '');
+        reset();
       })
       .catch((error) => {
         console.log(error.message);
@@ -148,14 +150,12 @@ function Contact() {
                   {...field}
                   type="textarea"
                   name="message"
-                  label=""
                   rows="5"
                   cols="53"
                   aria-invalid={!!errors.message}
                   className="field"
                   style={setErrorStyle(errors?.message)}
-                  placeholder="Please enter your message"
-                />
+                  placeholder="Please enter your message"></textarea>
               )}
             />
             {errors?.message && (

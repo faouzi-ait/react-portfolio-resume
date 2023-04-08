@@ -112,6 +112,8 @@ function Contact() {
               here
             </a>
           </div>
+          <div
+            style={{ margin: '1rem 0 0 0', borderBottom: '5px solid' }}></div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="form" noValidate>
           <div>

@@ -36,11 +36,13 @@ function Portfolio() {
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
-                <ProjectLogo
-                  src={`../${item.github}`}
-                  alt={item.altGithub}
-                  onClick={() => window.open(item.githubUrl)}
-                />
+                {item.showWeb && (
+                  <ProjectLogo
+                    src={`../${item.github}`}
+                    alt={item.altGithub}
+                    onClick={() => window.open(item.githubUrl)}
+                  />
+                )}
                 <ProjectLogo
                   src={`../${item.web}`}
                   alt={item.altWeb}
@@ -62,11 +64,13 @@ function Portfolio() {
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
-                <ProjectLogo
-                  src={`../${item.github}`}
-                  alt={item.altGithub}
-                  onClick={() => window.open(item.githubUrl)}
-                />
+                {item.showWeb && (
+                  <ProjectLogo
+                    src={`../${item.github}`}
+                    alt={item.altGithub}
+                    onClick={() => window.open(item.githubUrl)}
+                  />
+                )}
                 <ProjectLogo
                   src={`../${item.web}`}
                   alt={item.altWeb}

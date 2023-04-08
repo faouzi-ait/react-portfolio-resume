@@ -24,6 +24,7 @@ export const fullstackWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/e-commerce-2-front',
     webUrl: 'https://new-online-store.netlify.app',
+    showWeb: true,
   },
   {
     width: '30%',
@@ -35,6 +36,7 @@ export const fullstackWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/waves-front',
     webUrl: 'https://wave-store.netlify.app',
+    showWeb: false,
   },
   {
     width: '30%',
@@ -47,6 +49,7 @@ export const fullstackWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/e-commerce-front',
     webUrl: 'https://new-style.netlify.app',
+    showWeb: false,
   },
 ];
 
@@ -62,6 +65,7 @@ export const uiWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/Nexter',
     webUrl: 'https://real-estates-agency.netlify.app',
+    showWeb: false,
   },
   {
     width: '30%',
@@ -74,6 +78,7 @@ export const uiWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/nomoko',
     webUrl: 'https://nomoko-map.netlify.app',
+    showWeb: false,
   },
   {
     width: '30%',
@@ -86,6 +91,7 @@ export const uiWork = [
     altWeb: 'mgn',
     githubUrl: 'https://github.com/faouzi-ait/Trillo',
     webUrl: 'https://trillo-reservation.netlify.app',
+    showWeb: false,
   },
 ];
 

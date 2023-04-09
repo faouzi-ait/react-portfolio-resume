@@ -86,8 +86,7 @@ function Contact() {
               </span>
             </span>
           </div>
-          <div
-            style={{ margin: '1rem 0 0 0', borderBottom: '5px solid' }}></div>
+          <div className="border-separation"></div>
           <div className="contact-linkedin">
             Take a look at my LinkedIn profile{' '}
             <a
@@ -112,8 +111,7 @@ function Contact() {
               here
             </a>
           </div>
-          <div
-            style={{ margin: '1rem 0 0 0', borderBottom: '5px solid' }}></div>
+          <div className="border-separation"></div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="form" noValidate>
           <div>
@@ -197,6 +195,12 @@ function Contact() {
             {isLoading ? 'Sending your message...' : 'Send'}
           </button>
         </form>
+      </div>
+      <div className="copyright">
+        <span>
+          Copyright (c) {new Date().getFullYear()} Built with ❤️ by Faouzi
+          Aitelhara
+        </span>
       </div>
     </HomeContainer>
   );

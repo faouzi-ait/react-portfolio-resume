@@ -146,15 +146,26 @@
     font-size: 2.25rem;
 }
 
+.border-separation { 
+    margin: 1rem 0 0 0; 
+    border-bottom: 5px solid ;
+}
+
 @media only screen and (max-width: 1100px) {
+.border-separation { 
+    margin: 1rem 0 0 0; 
+    border-bottom: 5px solid;
+}
+
 .contact-display {
     flex-direction: column;
     margin-top: 0;
+    border: 1px solid red;
 }
 
 .contact-layout {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 3rem;
 }
 
 .subheader {
@@ -167,10 +178,10 @@
 
 .form {
     flex: 1;
-    padding: 16px 45px 25px 45px;
-    margin-right: 9rem;
-    border: 0;
     margin: 0 auto;
+    /* margin-right: 9rem; */
+    padding: 16px 45px 25px 45px;
+    border: 0;
     border-radius: 5px;
 }
 
@@ -201,4 +212,12 @@
 .confirm-error {
     color: red; 
     margin-bottom: .5rem;
+}
+
+.copyright {
+    margin: auto 0 1rem 0; 
+    font-size: .8rem;
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
 }

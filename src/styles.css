@@ -160,7 +160,6 @@
 .contact-display {
     flex-direction: column;
     margin-top: 0;
-    border: 1px solid red;
 }
 
 .contact-layout {

@@ -78,14 +78,15 @@
 .input {
     display: flex;
     flex-direction: column;
-    margin-bottom: .5rem;;
+    margin-bottom: .5rem;
 }
 
 .form {
     flex: 1;
-    padding: 1rem 3rem 2rem 3rem;
     margin-right: 3rem;
-    /* border: 1px solid lightgrey; */
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
     border-radius: 5px;
 }
 
@@ -107,7 +108,8 @@
 
 .field {
     width: 90%;
-    font-size: 1.15rem;
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
     padding: .5rem;
     border-radius: 4px;
     border: 1px solid;
@@ -152,46 +154,38 @@
 }
 
 @media only screen and (max-width: 1100px) {
-.border-separation { 
-    margin: 1rem 0 0 0; 
-    border-bottom: 5px solid;
-}
+    .border-separation { 
+        margin: 1rem 0 0 0; 
+        border-bottom: 5px solid;
+    }
 
-.contact-display {
-    flex-direction: column;
-    margin-top: 0;
-}
+    .contact-display {
+        flex-direction: column;
+        margin-top: 0;
+    }
 
-.contact-layout {
-    margin: 0 auto;
-    padding: 0 3rem;
-}
+    .contact-layout {
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
 
-.subheader {
-    font-size: 1.15rem;
-}
+    .subheader {
+        font-size: 1.15rem;
+    }
 
-.h1 {
-    font-size: 1.5rem;
-}
+    .h1 {
+        font-size: 1.5rem;
+    }
 
-.form {
-    flex: 1;
-    margin: 0 auto;
-    /* margin-right: 9rem; */
-    padding: 16px 45px 25px 45px;
-    border: 0;
-    border-radius: 5px;
-}
-
-.field {
-    font-size: 1rem;
-    width: 80vw;
-    padding: .5rem;
-    border-radius: 4px;
-    border: 1px solid;
-    outline: none;
-}
+    .field {
+        font-size: 1rem;
+        font-family: 'Overpass', sans-serif;
+        width: 80vw;
+        padding: .5rem;
+        border-radius: 4px;
+        border: 1px solid;
+        outline: none;
+    }
 }
 
 .contact-font {

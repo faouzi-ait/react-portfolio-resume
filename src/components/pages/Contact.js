@@ -155,7 +155,7 @@ function Contact() {
                 />
               )}
             />
-            <p style={{ fontWeight: 'bold', margin: '1.5rem 0 .5rem' }}>
+            <p style={{ margin: '1.5rem 0 .3rem 0' }}>
               Tell me about you & your project*
             </p>
             <Controller

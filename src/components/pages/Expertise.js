@@ -20,6 +20,7 @@ function Profile() {
 
   return (
     <HomeContainer id="profile">
+        <div style={{ marginBottom: '2rem' }}></div>
       <HomeContainerLayout>
         <Title>{t('profileTitle')}</Title>
       </HomeContainerLayout>

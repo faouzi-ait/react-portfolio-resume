@@ -49,9 +49,9 @@ export default {
     jobDesc1:
       "Je travaille actuellement sur la mise à jour de plusieurs applications financières, bancaires et de dashboard au sein d'une équipe de dévevoppeur Front End, Back End et UX en proche collaboration avec le client dans une méthodologie Agile/Scrum. L'application passe d'une architecture monolithique à un modèle axé sur les services et les API. Le front-end est construit sur ReactJS v17+. Spécifiquement axé sur les hooks, composants fonctionnels, données (states) centralisées au niveau applicatif en utilisant Redux/Saga et JavaScript ES6+.",
     jobDesc2:
-      "Mise en œuvre de nouvelles interfaces et développement d’une application back-office de type CRM utilisée par une équipe de Finance et de Marketing pour la géstion de portefeuille clients avec contacts, messagerie, organisation de réunion, maintient de l'historique des communications avec upload de documents.",
+      "Mise en œuvre de nouvelles interfaces et développement d’une application back-office de type CRM utilisée par une équipe de Finance et de Marketing pour la gestion de portefeuille clients avec contacts, messagerie, organisation de réunion, maintient de l'historique des communications avec upload de documents.",
     jobDesc3:
-      'Développement d’une application back-office pour la gestion de clients et des tâches opérationnelles liée à la souscription d’assurance voyage sur plateforme Web et mobile.',
+      'Développement d’une application back-office pour la gestion de clients et des tâches opérationnelles liées à la souscription d’assurance voyage sur plateforme Web et mobile.',
 
     // CONTACT PAGE
     contact: 'Contactez Moi',

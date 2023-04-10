@@ -25,11 +25,7 @@ function Portfolio() {
           <div className="accordion-content">
             <div>{content}</div>
             <br />
-            <div
-              style={{
-                fontSize: '.15rem',
-                fontWeight: 'bold',
-              }}></div>
+            <div className="experience-separation"></div>
             <div>
               {env.map((item, i) => (
                 <AccordionLabels key={i}>{item}</AccordionLabels>

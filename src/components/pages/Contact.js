@@ -81,6 +81,7 @@ function Contact() {
       })
       .catch((error) => {
         console.log(error.message);
+        setIsLoading(false);
         setError('The message could not be sent, please try again...');
         resetMessage(setError);
       });
@@ -180,14 +181,7 @@ function Contact() {
               )}
             />
             {errors?.message && (
-              <div
-                style={{
-                  color: 'red',
-                  marginBottom: '.5rem',
-                  fontWeight: 'bold',
-                }}>
-                {t('messageFieldError')}
-              </div>
+              <div className="error">{t('messageFieldError')}</div>
             )}
           </div>
           {confirmation && <div className="confirm">{confirmation}</div>}

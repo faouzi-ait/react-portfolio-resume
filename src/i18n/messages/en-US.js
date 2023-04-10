@@ -16,6 +16,12 @@ export default {
     profileTitle: 'My Expertise',
 
     // MY EXPERTISE PAGE
+    profileDesc: `Passionate front-end developer, specialized in the ReactJS ecosystem
+          and strong adept of the Agile/Scrum methodology, involved at the earliest
+          stage of the application development cycle from start to deployment.
+          Comfortable within a feature team or in an autonomous structure.
+          Result and quality oriented, always experimenting and reviewing the latest trends and evolutions.`,
+
     librariesTitle: 'Libraries',
     librariesDesc: 'Experience developping applications using:',
     libraries:
@@ -32,32 +38,46 @@ export default {
     development:
       'JavaScript ES6+, HTML, CSS, SASS, Git, Github, Netifly, VS Code, Postman, In-Vision.',
 
-    // MY WORK PAGE
-    work_1:
-      'Developed a number of applications to support an active portfolio to consolidate and further my skillset.',
-    work_2:
-      'Completed several E-Commerce applications using the ReactJS ecosystem along the most popular and robust third libraries such as Redux, Redux Saga, Styled Component, SASS and Material UI.',
-    work_3:
-      'Professionally, I have been focusing on banking and financial applications for a major british bank.',
-    work_legend_1:
-      'Full stack E-Commerce application based on the Amazon.com platform including full user features with shopping and payment experience',
+    // PORTFOLIO PAGE
+    portfolio: 'My Portfolio',
 
-    // OTHER PAGES
-    profile: 'Profile Page',
-    portfolio: 'Portfolio Page',
-    contact: 'Contact me',
+    // EXPERIENCE PAGE
+    experience: 'Professional Experiences',
 
-    // OTHER PAGES DUMMY TEXT
-    text: 'This is the content styled component',
+    jobTitle1: 'React Developer | NatWest Group | July 2021 - Present',
+    jobTitle2:
+      'React Developer | RiskCare Financial | October 2020 - June 2021',
+    jobTitle3:
+      'React Developer | ST-Groupe Consultancy | September 2018 - August 2020',
 
-    profileDesc: `Passionate front-end developer, specialized in the ReactJS ecosystem
-          and strong adept of the Agile/Scrum methodology, involved at the earliest
-          stage of the application development cycle from start to deployment.
-          Comfortable within a feature team or in an autonomous structure.
-          Result and quality oriented, always experimenting and reviewing the latest trends and evolutions.`,
-    uni_one: 'Northumbria University, London, United Kingdom',
-    uni_two: 'Waterford Institute of Technology, Ireland',
-    skillOverview:
-      'I am inspired and driven by creating great work with people who are as passionate as I am about building truly awesome experiences and products.',
+    jobDesc1:
+      'Currently working on rebuilding the Financials, Banking and Dashboard applications, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
+    jobDesc2:
+      'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
+    jobDesc3:
+      'Development of a back-office application for client management and day-to-day operational tasks for travel insurance for the web and mobile tablet platform.',
+
+    // CONTACT PAGE
+    contact: 'Contact Me',
+    about: 'Tell me about your project',
+
+    collaborate: "Let's build something together",
+    linkedin: 'Take a look at my LinkedIn profile',
+    github: 'Checkout my GitHub repositories',
+    resume: 'You can download my resume in a PDF format',
+
+    here: 'ici',
+
+    nameField: 'Please enter your full name*',
+    emailField: 'Please enter your email*',
+    messageField: 'Please enter your message',
+    labelField: 'Tell me about you and your project*',
+
+    nameFieldError: 'Your name is mandatory',
+    emailFieldError: 'Your email is mandatory',
+    messageFieldError: 'Your message is mandatory',
+
+    send: 'Send',
+    sending: 'Sending your message...',
   },
 };

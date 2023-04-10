@@ -18,13 +18,13 @@ import {
 
 import { fullstackWork, uiWork } from '../../utils/utilities';
 
-// import { t } from '../../i18n/translate';
+import { t } from '../../i18n/translate';
 
 function Portfolio() {
   return (
     <Page id="experiences">
       <HomeContainerLayout>
-        <Title>My Portfolio</Title>
+        <Title>{t('portfolio')}</Title>
       </HomeContainerLayout>
       <ExpertiseContainer>
         {fullstackWork.map((item, i) => (

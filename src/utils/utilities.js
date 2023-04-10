@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { t } from '../i18n/translate';
 import { DARK, LIGHT, BASE } from '../themes/index';
 import { THEMES } from '../theme';
 
@@ -97,8 +99,8 @@ export const uiWork = [
 
 export const accordionData = [
   {
-    title: 'React Developer | NatWest Group | July 2021 - Present',
-    content: `Currently working on rebuilding the Financials, Banking and Dashboard applications, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.`,
+    title: t('jobTitle1'),
+    content: t('jobDesc1'),
     env: [
       'React v17+',
       'React Hooks',
@@ -120,8 +122,8 @@ export const accordionData = [
     ],
   },
   {
-    title: 'React Developer | RiskCare Financial | October 2020 - June 2021',
-    content: `Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.`,
+    title: t('jobTitle2'),
+    content: t('jobDesc2'),
     env: [
       'React v17+',
       'React Hooks',
@@ -138,9 +140,8 @@ export const accordionData = [
     ],
   },
   {
-    title:
-      'React Developer | ST-Groupe Consultancy | September 2018 - October 2020',
-    content: `Development of a back-office application for client management and day-to-day operational tasks for travel insurance for the web and mobile tablet platform.`,
+    title: t('jobTitle3'),
+    content: t('jobDesc3'),
     env: [
       'React v17+',
       'React Hooks',

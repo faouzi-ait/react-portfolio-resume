@@ -3,9 +3,9 @@ import { LOCALES } from '../constants';
 export default {
   [LOCALES.ENGLISH]: {
     // HOME PAGE
-    subHeader: 'Front End Developer',
+    subHeader: 'Developer',
     subHeaderb: '4+ years of experience',
-    subHeader2: 'React & Redux',
+    subHeader2: 'JavaScript, ReactJS & Redux',
 
     // SIDE NAVIGATION
     homeLink: 'Home',
@@ -16,7 +16,7 @@ export default {
     profileTitle: 'My Expertise',
 
     // MY EXPERTISE PAGE
-    profileDesc: `Passionate front-end developer, specialized in the ReactJS ecosystem
+    profileDesc: `Passionate developer, specialized in the ReactJS ecosystem
           and strong adept of the Agile/Scrum methodology, involved at the earliest
           stage of the application development cycle from start to deployment.
           Comfortable within a feature team or in an autonomous structure.

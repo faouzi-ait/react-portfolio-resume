@@ -3,9 +3,9 @@ import { LOCALES } from '../constants';
 export default {
   [LOCALES.FRENCH]: {
     // HOME PAGE
-    subHeader: 'Développeur Front End',
+    subHeader: 'Développeur',
     subHeaderb: "4 ans d'expérience",
-    subHeader2: 'React & Redux',
+    subHeader2: 'JavaScript, ReactJS & Redux',
 
     // SIDE NAVIGATION
     homeLink: 'Accueil',
@@ -16,7 +16,7 @@ export default {
     profileTitle: 'Mon Expertise',
 
     // MY EXPERTISE PAGE
-    profileDesc: `Développeur front end passionné, spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.`,
+    profileDesc: `Développeur passionné, spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.`,
 
     librariesTitle: 'Librairies',
     librariesDesc: 'Les librairies qui composent ma stack:',

@@ -18,7 +18,7 @@ import { getTheme } from './utils/utilities';
 import './styles.css';
 
 function App() {
-  // TESTING CIRCLE CI CONFIG
+  // TESTING CI CONFIG
   const { languageTheme, lightTheme } = useSelector((state) => state);
   const persistedLanguage = localStorage.getItem('language');
 

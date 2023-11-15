@@ -78,14 +78,15 @@
 .input {
     display: flex;
     flex-direction: column;
-    margin-bottom: .5rem;;
+    margin-bottom: .5rem;
 }
 
 .form {
     flex: 1;
-    padding: 16px 45px 25px 45px;
-    margin-right: 9rem;
-    border: 1px solid lightgrey;
+    margin-right: 3rem;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
     border-radius: 5px;
 }
 
@@ -106,7 +107,9 @@
 }
 
 .field {
-    font-size: 1.15rem;
+    width: 90%;
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
     padding: .5rem;
     border-radius: 4px;
     border: 1px solid;
@@ -127,7 +130,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding-left: 7rem;
+    padding-left: 9rem;
 }
 
 .h1 {
@@ -145,42 +148,54 @@
     font-size: 2.25rem;
 }
 
+.border-separation { 
+    margin: 1rem 0 0 0; 
+    border-bottom: 5px solid ;
+}
+.experience-separation {
+    font-size: .15rem;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 1100px) {
-.contact-display {
-    flex-direction: column;
-    margin-top: 0;
-}
+    .border-separation { 
+        margin: 1rem 0 0 0; 
+        border-bottom: 5px solid;
+    }
 
-.contact-layout {
-    margin: 0 auto;
-    padding: 0;
-}
+    .contact-display {
+        flex-direction: column;
+        margin-top: 0;
+    }
 
-.subheader {
-    font-size: 1.15rem;
-}
+    .contact-layout {
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
 
-.h1 {
-    font-size: 1.5rem;
-}
+    .subheader {
+        font-size: 1.15rem;
+    }
 
-.form {
-    flex: 1;
-    padding: 16px 45px 25px 45px;
-    margin-right: 9rem;
-    border: 0;
-    margin: 0 auto;
-    border-radius: 5px;
-}
+    .h1 {
+        font-size: 1.5rem;
+    }
 
-.field {
-    font-size: 1rem;
-    width: 80vw;
-    padding: .5rem;
-    border-radius: 4px;
-    border: 1px solid;
-    outline: none;
-}
+    .field {
+        font-size: 1rem;
+        font-family: 'Overpass', sans-serif;
+        width: 80vw;
+        padding: .5rem;
+        border-radius: 4px;
+        border: 1px solid;
+        outline: none;
+    }
 }
 
 .contact-font {
@@ -200,4 +215,12 @@
 .confirm-error {
     color: red; 
     margin-bottom: .5rem;
+}
+
+.copyright {
+    margin: auto 0 1rem 0; 
+    font-size: .8rem;
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
 }

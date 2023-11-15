@@ -2,40 +2,10 @@ import { LOCALES } from '../constants';
 
 export default {
   [LOCALES.FRENCH]: {
-    // greeting: 'Bonjour',
-    // home: "Page D'accueil",
-
-    text: 'Ceci est le contenu du composant stylisé',
-
-    subHeader: 'Développeur Front End',
+    // HOME PAGE
+    subHeader: 'Développeur',
     subHeaderb: "4 ans d'expérience",
-    subHeader2: 'React & Redux',
-
-    profile: 'Mon Profile',
-    experiences: 'Mes Experiences',
-    portfolio: 'Mon Portfolio',
-    contact: 'Contactez-moi',
-
-    profileDesc: `Développeur front end passionné, spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.
-              `,
-    uni_one: 'Universite de Northumbria, Londres, Angletaire',
-    uni_two: 'Institute Technologique de Waterford, Irelande',
-    // education: 'formation',
-    // highlight: 'technology',
-    // skillOverviewTitle: 'Compétences',
-    skillOverview:
-      'Toujours intéressé par la création de nouvelles expériences avec des développeurs aussi passionné que moi',
-    // skillSetDevTitle: 'Developement Web',
-    // skillSetDev: 'JavaScript (ES6/7/8+), ReactJS, NodeJS, ExpressJS, MongoDB.',
-    // skillSetFrontTitle: 'Front End',
-    // skillSetFront:
-    //   'HTML5, CSS, SASS, Styled Components, Redux, Redux Saga, Reselect, Redux Persist, Context.',
-    // skillSetUXTitle: 'UX / UI Design',
-    // skillSetUX:
-    //   'Design, Sketch, Figma, Prototyping, Wireframing, User Requirements Research.',
-    // skillSetToolTitle: 'Outils',
-    // skillSetTool:
-    //   'Design, Sketch, Figma, Prototyping, Wireframing, User Requirements Research.',
+    subHeader2: 'JavaScript, ReactJS & Redux',
 
     // SIDE NAVIGATION
     homeLink: 'Accueil',
@@ -46,6 +16,8 @@ export default {
     profileTitle: 'Mon Expertise',
 
     // MY EXPERTISE PAGE
+    profileDesc: `Développeur passionné, spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.`,
+
     librariesTitle: 'Librairies',
     librariesDesc: 'Les librairies qui composent ma stack:',
     libraries:
@@ -61,5 +33,47 @@ export default {
       'Expérimenté dans les languages de développement ainsi que les outils suivants:',
     development:
       'JavaScript ES6+, HTML, CSS, SASS, Git, Github, Netifly, VS Code, Postman, In-Vision.',
+
+    // PORTFOLIO PAGE
+    portfolio: 'Mon Portfolio',
+
+    // EXPERIENCE PAGE
+    experience: 'Expérience Professionnelle',
+
+    jobTitle1: 'Développeur React | NatWest Group | Juillet 2021 - Présent',
+    jobTitle2:
+      'Développeur React | RiskCare Financial | Octobre 2020 - Juin 2021',
+    jobTitle3:
+      'Développeur React | ST-Groupe Consultancy | Septembre 2018 - Août 2020',
+
+    jobDesc1:
+      "Je travaille actuellement sur la mise à jour de plusieurs applications financières, bancaires et de dashboard au sein d'une équipe de dévevoppeur Front End, Back End et UX en proche collaboration avec le client dans une méthodologie Agile/Scrum. L'application passe d'une architecture monolithique à un modèle axé sur les services et les API. Le front-end est construit sur ReactJS v17+. Spécifiquement axé sur les hooks, composants fonctionnels, données (states) centralisées au niveau applicatif en utilisant Redux/Saga et JavaScript ES6+.",
+    jobDesc2:
+      "Mise en œuvre de nouvelles interfaces et développement d’une application back-office de type CRM utilisée par une équipe de Finance et de Marketing pour la gestion de portefeuille clients avec contacts, messagerie, organisation de réunion, maintient de l'historique des communications avec upload de documents.",
+    jobDesc3:
+      'Développement d’une application back-office pour la gestion de clients et des tâches opérationnelles liées à la souscription d’assurance voyage sur plateforme Web et mobile.',
+
+    // CONTACT PAGE
+    contact: 'Contactez Moi',
+    about: 'Parlez-moi de votre project',
+
+    collaborate: 'Et si on collaborait ensemble',
+    linkedin: 'Consulter mon profile LinkedIn',
+    github: 'Voici mes repository sur GitHub',
+    resume: 'Vous pouvez télécharger mon CV au format PDF',
+
+    here: 'ici',
+
+    nameField: 'Veuillez saisir votre nom*',
+    emailField: 'Veuillez saisir votre email*',
+    messageField: 'Veuillez saisir votre message',
+    labelField: 'Parlez-moi de vous et de votre projet*',
+
+    nameFieldError: 'Votre nom est obligatoire',
+    emailFieldError: 'Votre email est obligatoire',
+    messageFieldError: 'Votre message est obligatoire',
+
+    send: 'Envoyer',
+    sending: 'Envoi en cours...',
   },
 };

@@ -12,18 +12,18 @@ import {
 
 import { resetMessage } from '../../utils/utilities';
 
-// import { t } from '../../i18n/translate';
+import { t } from '../../i18n/translate';
 
 function Contact() {
-  // const { register, handleSubmit, errors } = useForm();
-  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [confirmation, setConfirmation] = useState('');
 
   const {
     handleSubmit,
     control,
     formState: { errors },
+    setValue,
     reset,
   } = useForm({
     mode: 'onBlur',
@@ -38,6 +38,27 @@ function Contact() {
       boxShadow: name ? '0 0 1.5px 1px red' : '',
     };
   };
+
+  const links = [
+    {
+      label: 'linkedin',
+      href: 'https://www.linkedin.com/in/faouzia/',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+    {
+      label: 'github',
+      href: 'https://github.com/faouzi-ait/',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+    {
+      label: 'resume',
+      href: './resume.pdf',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  ];
 
   const onSubmit = async (data) => {
     setIsLoading(true);
@@ -55,10 +76,12 @@ function Contact() {
         setConfirmation(result.data.message);
         setIsLoading(false);
         resetMessage(setConfirmation);
-        reset({});
+        setValue('message', '');
+        reset();
       })
       .catch((error) => {
         console.log(error.message);
+        setIsLoading(false);
         setError('The message could not be sent, please try again...');
         resetMessage(setError);
       });
@@ -67,26 +90,35 @@ function Contact() {
   return (
     <HomeContainer id="contact">
       <HomeContainerLayout>
-        <Title>Contact me</Title>
+        <Title>{t('contact')}</Title>
       </HomeContainerLayout>
       <div className="contact-display">
         <div className="contact-layout" id="contact-left">
           <div>
             <h1 className="h1">
-              Let's chat.
+              Let's chat!
               <br />
-              <span className='subheader'>
-                Tell me about your project
-              </span>
+              <span className="subheader">{t('about')}</span>
             </h1>
             <span className="contact-font">
-              Let's build something together <span role="img">🤟</span>
+              {t('collaborate')}{' '}
+              <span role="img" aria-label="together">
+                🤟
+              </span>
             </span>
           </div>
-          <div className="contact-linkedin">
-            Take a look at my LinkedIn profile
-            <a href="https://www.linkedin.com/in/faouzia/" target='_blank'> right here</a>
-          </div>
+          <div className="border-separation"></div>
+
+          {links.map((item) => (
+            <div className="contact-linkedin">
+              {t(item.label)}{' '}
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
+                {t('here')}
+              </a>
+            </div>
+          ))}
+
+          <div className="border-separation"></div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="form" noValidate>
           <div>
@@ -99,14 +131,14 @@ function Contact() {
                   {...field}
                   type="text"
                   name="name"
-                  label=""
+                  label={t('nameField')}
                   aria-invalid={!!errors.name}
                   containerClass="input"
                   labelClassName="label"
                   className="field"
                   style={setErrorStyle(errors?.name)}
-                  errorMessage={errors?.name ? 'Please enter your name' : ''}
-                  placeholder="Please enter your full name"
+                  errorMessage={errors?.name ? t('nameFieldError') : ''}
+                  placeholder=""
                 />
               )}
             />
@@ -119,20 +151,18 @@ function Contact() {
                   {...field}
                   type="text"
                   name="email"
-                  label=""
+                  label={t('emailField')}
                   aria-invalid={!!errors.email}
                   containerClass="input"
                   labelClassName="label"
                   className="field"
                   style={setErrorStyle(errors?.email)}
-                  errorMessage={errors?.email ? 'Please enter your email' : ''}
-                  placeholder="Please enter your email"
+                  errorMessage={errors?.email ? t('emailFieldError') : ''}
+                  placeholder=""
                 />
               )}
             />
-            <p style={{ fontWeight: 'bold', margin: '1.5rem 0 .5rem' }}>
-              Tell me about you & your project*
-            </p>
+            <p style={{ margin: '1.5rem 0 .3rem 0' }}>{t('labelField')}</p>
             <Controller
               name="message"
               control={control}
@@ -142,25 +172,16 @@ function Contact() {
                   {...field}
                   type="textarea"
                   name="message"
-                  label=""
                   rows="5"
                   cols="53"
                   aria-invalid={!!errors.message}
                   className="field"
                   style={setErrorStyle(errors?.message)}
-                  placeholder="Please enter your message"
-                />
+                  placeholder=""></textarea>
               )}
             />
             {errors?.message && (
-              <div
-                style={{
-                  color: 'red',
-                  marginBottom: '.5rem',
-                  fontWeight: 'bold',
-                }}>
-                Please enter your message
-              </div>
+              <div className="error">{t('messageFieldError')}</div>
             )}
           </div>
           {confirmation && <div className="confirm">{confirmation}</div>}
@@ -169,9 +190,15 @@ function Contact() {
             type="submit"
             disabled={isLoading ? true : false}
             className="submit-btn">
-            {isLoading ? 'Sending your message...' : 'Send'}
+            {isLoading ? t('sending') : t('send')}
           </button>
         </form>
+      </div>
+      <div className="copyright">
+        <span>
+          Copyright (c) {new Date().getFullYear()} Built with ❤️ by Faouzi
+          Aitelhara
+        </span>
       </div>
     </HomeContainer>
   );

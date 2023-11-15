@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Boxes,
   Title,
-  Separator,
   Expertise,
   TitleMargin,
   ProfileDesc,
@@ -16,16 +15,13 @@ import {
 import { t } from '../../i18n/translate';
 
 function Profile() {
-  // const st = useSelector((state) => state.lightTheme.state);
-
   return (
     <HomeContainer id="profile">
+      <div style={{ marginBottom: '2rem' }}></div>
       <HomeContainerLayout>
         <Title>{t('profileTitle')}</Title>
       </HomeContainerLayout>
       <ProfileDesc>{t('profileDesc')}</ProfileDesc>
-
-      <Separator />
 
       <ExpertiseContainer>
         <Boxes>

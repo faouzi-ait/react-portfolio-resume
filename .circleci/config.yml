@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      # - run:
+      #     name: Run tests
+      #     command: npm test
+  # deploy:
+  #   docker:
+  #     - image: netlify/cli:latest
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Deploy to Netlify
+  #         command: netlify deploy --prod --message "Deployed from CircleCI" --auth $NETLIFY_AUTH_TOKEN
+  # workflows:
+  #   version: 2
+  #   build-and-deploy:
+  #     jobs:
+  #       - build
+  #       - deploy:
+  #           requires:
+  #             - build

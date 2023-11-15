@@ -18,13 +18,13 @@ import {
 
 import { fullstackWork, uiWork } from '../../utils/utilities';
 
-// import { t } from '../../i18n/translate';
+import { t } from '../../i18n/translate';
 
 function Portfolio() {
   return (
     <Page id="experiences">
       <HomeContainerLayout>
-        <Title>My Portfolio</Title>
+        <Title>{t('portfolio')}</Title>
       </HomeContainerLayout>
       <ExpertiseContainer>
         {fullstackWork.map((item, i) => (
@@ -36,11 +36,13 @@ function Portfolio() {
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
-                <ProjectLogo
-                  src={`../${item.github}`}
-                  alt={item.altGithub}
-                  onClick={() => window.open(item.githubUrl)}
-                />
+                {item.showWeb && (
+                  <ProjectLogo
+                    src={`../${item.github}`}
+                    alt={item.altGithub}
+                    onClick={() => window.open(item.githubUrl)}
+                  />
+                )}
                 <ProjectLogo
                   src={`../${item.web}`}
                   alt={item.altWeb}
@@ -62,11 +64,13 @@ function Portfolio() {
             <OverlayContainer>
               <ProjectDesc>{item.label}</ProjectDesc>
               <ImageContainer>
-                <ProjectLogo
-                  src={`../${item.github}`}
-                  alt={item.altGithub}
-                  onClick={() => window.open(item.githubUrl)}
-                />
+                {item.showWeb && (
+                  <ProjectLogo
+                    src={`../${item.github}`}
+                    alt={item.altGithub}
+                    onClick={() => window.open(item.githubUrl)}
+                  />
+                )}
                 <ProjectLogo
                   src={`../${item.web}`}
                   alt={item.altWeb}

@@ -9,7 +9,7 @@ import {
 import { AccordionLabels } from '../styled-components-styles/ExperienceStyles';
 
 import { accordionData } from '../../utils/utilities';
-// import { t } from '../../i18n/translate';
+import { t } from '../../i18n/translate';
 
 function Portfolio() {
   const Accordion = ({ title, content, env }) => {
@@ -25,11 +25,7 @@ function Portfolio() {
           <div className="accordion-content">
             <div>{content}</div>
             <br />
-            <div
-              style={{
-                fontSize: '.15rem',
-                fontWeight: 'bold',
-              }}></div>
+            <div className="experience-separation"></div>
             <div>
               {env.map((item, i) => (
                 <AccordionLabels key={i}>{item}</AccordionLabels>
@@ -44,7 +40,7 @@ function Portfolio() {
   return (
     <Page id="portfolio">
       <HomeContainerLayout>
-        <Title>Professional Experiences</Title>
+        <Title>{t('experience')}</Title>
       </HomeContainerLayout>
       <div className="accordion">
         {accordionData.map(({ title, content, env }) => (

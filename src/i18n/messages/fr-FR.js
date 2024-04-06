@@ -26,7 +26,7 @@ export default {
     statesTitle: 'Gestion des données',
     statesDesc:
       'Les librairies suivantes sont aussi utilisées pour gérer les données au niveau applicatif:',
-    states: 'Redux, Redux Saga, Redux Persist, Context API.',
+    states: 'Redux, Redux Saga, Redux Toolkit, RTK-Query, Redux Persist, Context API.',
 
     developmentTitle: 'Développement',
     developmentDesc:

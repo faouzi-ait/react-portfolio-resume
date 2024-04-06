@@ -30,7 +30,7 @@ export default {
     statesTitle: 'State Management',
     statesDesc:
       'The following state managements solution are used extensively with ReactJS:',
-    states: 'Redux, Redux Saga, Redux Persist, Context API.',
+    states: 'Redux, Redux Saga, Redux Toolkit, RTK-Query, Redux Persist, Context API.',
 
     developmentTitle: 'Development',
     developmentDesc:

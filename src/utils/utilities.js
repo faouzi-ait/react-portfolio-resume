@@ -19,7 +19,8 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'commerce.png',
-    label: 'Fullstack E-Commerce based on the Amazon UX',
+    label: 'Fullstack Amazon E-Commerce ',
+    stack: "ReactJS, Hooks, JS ES6+, Redux/Saga, SASS, CSS Grid/Flexbox, i18n, REST, Stripe Payments, Email",
     github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
@@ -31,7 +32,8 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'wave.png',
-    label: 'Fullstack E-Commerce based in guitards of all kind',
+    label: 'Fullstack E-Commerce focused on guitards',
+    stack: "ReactJS, Hooks, JS ES6+, Context API, SASS, CSS3, REST/ExpressJS, Paypal, Email",
     github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
@@ -43,8 +45,8 @@ export const fullstackWork = [
   {
     width: '30%',
     src: 'new-style.png',
-
     label: 'Fullstack E-Commerce for men and women cloting',
+    stack: "ReactJS, Hooks, JS ES6+, Redux/Saga, Responsive Design, CSS3, CSS Grid/Flexbox, REST/ExpressJS, Paypal, Email",
     github: 'github.png',
     altGithub: 'github',
     web: 'mgn.png',
@@ -102,6 +104,23 @@ export const accordionData = [
     title: t('jobTitle1'),
     content: t('jobDesc1'),
     env: [
+      'NX',
+      'NextJS',
+      'TypeScript',
+      'JavaScript ES6+',
+      'Forge-XD',
+      'Material-UI',
+      'Context API',
+      'REST API',
+      'HTML',
+      'CSS',
+      'SASS',
+    ],
+  },
+  {
+    title: t('jobTitle2'),
+    content: t('jobDesc2'),
+    env: [
       'React v17+',
       'React Hooks',
       'useMemo',
@@ -122,8 +141,8 @@ export const accordionData = [
     ],
   },
   {
-    title: t('jobTitle2'),
-    content: t('jobDesc2'),
+    title: t('jobTitle3'),
+    content: t('jobDesc3'),
     env: [
       'React v17+',
       'React Hooks',
@@ -137,24 +156,6 @@ export const accordionData = [
       'SASS',
       'Styled Component',
       'REST API.',
-    ],
-  },
-  {
-    title: t('jobTitle3'),
-    content: t('jobDesc3'),
-    env: [
-      'React v17+',
-      'React Hooks',
-      'Redux',
-      'Redux Saga',
-      'Context API',
-      'JavaScript ES6+',
-      'JWT',
-      'HTML',
-      'CSS',
-      'SASS',
-      'Styled Component',
-      'REST API',
     ],
   },
 ];

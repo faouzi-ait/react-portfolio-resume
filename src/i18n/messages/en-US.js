@@ -44,18 +44,16 @@ export default {
     // EXPERIENCE PAGE
     experience: 'Professional Experiences',
 
-    jobTitle1: 'React Developer | NatWest Group | July 2021 - Present',
-    jobTitle2:
-      'React Developer | RiskCare Financial | October 2020 - June 2021',
-    jobTitle3:
-      'React Developer | ST-Groupe Consultancy | September 2018 - August 2020',
+    jobTitle1: 'Front End - React Developer | LSEG Group | March 2024 - Present',
+    jobTitle2: 'Front End - React Developer | NatWest Group | July 2021 - August 2023',
+    jobTitle3: 'Front End - React Developer | RiskCare Financial | October 2020 - June 2021',
 
     jobDesc1:
-      'Currently working on rebuilding the Financials, Banking and Dashboard applications, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
+      'Currently working in developing and enhancing the front-end trading solutions for the DMI Marketplace financial service portal for the London Stock Exchange Group',
     jobDesc2:
-      'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
+      'Currently working on rebuilding the Financials, Banking and Dashboard applications, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
     jobDesc3:
-      'Development of a back-office application for client management and day-to-day operational tasks for travel insurance for the web and mobile tablet platform.',
+      'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
 
     // CONTACT PAGE
     contact: 'Contact Me',

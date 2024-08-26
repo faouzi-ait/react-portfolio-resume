@@ -44,7 +44,7 @@ export default {
     jobTitle2:
       'Développeur React | RiskCare Financial | Octobre 2020 - Juin 2021',
     jobTitle3:
-      'Développeur React | ST-Groupe Consultancy | Septembre 2018 - Août 2020',
+      'Consultant | Septembre 2018 - Août 2020',
 
     jobDesc1:
       "Je travaille actuellement sur la mise à jour de plusieurs applications financières, bancaires et de dashboard au sein d'une équipe de dévevoppeur Front End, Back End et UX en proche collaboration avec le client dans une méthodologie Agile/Scrum. L'application passe d'une architecture monolithique à un modèle axé sur les services et les API. Le front-end est construit sur ReactJS v17+. Spécifiquement axé sur les hooks, composants fonctionnels, données (states) centralisées au niveau applicatif en utilisant Redux/Saga et JavaScript ES6+.",

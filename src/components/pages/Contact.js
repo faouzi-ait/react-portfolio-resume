@@ -64,7 +64,7 @@ function Contact() {
     setIsLoading(true);
     await sendPostRequest(
       // 'http://localhost:5000/api/v1/contact/message',
-      'https://powerful-pink-antelope.cyclic.app/api/v1/contact/message',
+      'https://waves-back.onrender.com/api/v1/contact/message',
       {
         name: data.name,
         lastname: '',

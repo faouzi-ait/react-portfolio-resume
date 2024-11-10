@@ -48,12 +48,9 @@ export default {
     jobTitle2: 'Front End - React Developer | NatWest Group | July 2021 - August 2023',
     jobTitle3: 'Front End - React Developer | RiskCare Financial | October 2020 - June 2021',
 
-    jobDesc1:
-      'Currently working in developing and enhancing the front-end trading solutions for the DMI Marketplace financial service portal for the London Stock Exchange Group',
-    jobDesc2:
-      'Currently working on rebuilding the Financials, Banking and Dashboard applications, migrating from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
-    jobDesc3:
-      'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
+    jobDesc1: 'Currently working in developing and enhancing the front-end trading solutions for the DMI Marketplace financial service portal for the London Stock Exchange Group',
+    jobDesc2: 'developing the Financials, Banking and Dashboard applications along with the migration from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
+    jobDesc3: 'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
 
     // CONTACT PAGE
     contact: 'Contact Me',

@@ -17,7 +17,7 @@ export const getTheme = (themeName) => {
 
 export const fullstackWork = [
   {
-    width: "45%",
+    width: "38%",
     src: "wave.png",
     label: "Fullstack E-Commerce focused on guitards",
     stack:
@@ -45,7 +45,7 @@ export const fullstackWork = [
   //   showWeb: true,
   // },
   {
-    width: "45%",
+    width: "38%",
     src: "instagram.png",
     label: "Fullstack & fully featured Instagram website",
 
@@ -101,7 +101,7 @@ export const uiWork = [
   //   showWeb: true,
   // },
   {
-    width: "60%",
+    width: "50%",
     src: "commerce.png",
     label: "Fullstack Amazon E-Commerce ",
     stack:

@@ -47,7 +47,7 @@ export const Boxes = styled.div`
   z-index: 9999;
 
   &:hover {
-    scale: 1.1;
+    // scale: 1.1;
     z-index: 99999;
   }
 

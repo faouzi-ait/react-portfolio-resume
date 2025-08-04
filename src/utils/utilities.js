@@ -57,20 +57,20 @@ export const fullstackWork = [
     webUrl: "https://insta-web.netlify.app/",
     showWeb: true,
   },
-  // {
-  //   width: "30%",
-  //   src: "new-style.png",
-  //   label: "Fullstack E-Commerce for men and women cloting",
-  //   stack:
-  //     "ReactJS, Hooks, JS ES6+, Redux/Saga, Responsive Design, CSS3, CSS Grid/Flexbox, REST/ExpressJS, Paypal, Email",
-  //   github: "github.png",
-  //   altGithub: "github",
-  //   web: "mgn.png",
-  //   altWeb: "mgn",
-  //   githubUrl: "https://github.com/faouzi-ait/e-commerce-front",
-  //   webUrl: "https://new-style.netlify.app",
-  //   showWeb: false,
-  // },
+  {
+    width: "38%",
+    src: "new-style.png",
+    label: "Fullstack E-Commerce for men and women cloting",
+    stack:
+      "ReactJS, Hooks, JS ES6+, Redux/Saga, Responsive Design, CSS3, CSS Grid/Flexbox, REST/ExpressJS, Paypal, Email",
+    github: "github.png",
+    altGithub: "github",
+    web: "mgn.png",
+    altWeb: "mgn",
+    githubUrl: "https://github.com/faouzi-ait/e-commerce-front",
+    webUrl: "https://new-style.netlify.app",
+    showWeb: false,
+  },
 ];
 
 export const uiWork = [

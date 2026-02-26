@@ -1,6 +1,6 @@
 import BASE from './base';
 
-export default {
+const dark = {
   ...BASE,
   color: '#fff',
   color2: 'rgb(10, 28, 51)',
@@ -8,4 +8,6 @@ export default {
   background2: '#fff',
   background3: 'rgb(10, 28, 51)',
 };
+
+export default dark;
 // background: '#484848',

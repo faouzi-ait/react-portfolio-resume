@@ -1,6 +1,6 @@
 import { LOCALES } from "../constants";
 
-export default {
+const frFR = {
   [LOCALES.FRENCH]: {
     // HOME PAGE
     subHeader: "Développeur",
@@ -79,3 +79,5 @@ export default {
     sending: "Envoi en cours...",
   },
 };
+
+export default frFR;

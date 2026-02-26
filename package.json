@@ -2,6 +2,9 @@
   "name": "react-hooks-translations",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -17,7 +20,7 @@
     "react-logger": "^1.1.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.0",
     "react-sticky-el": "^2.0.5",
     "redux": "^4.0.5",
@@ -25,9 +28,9 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,6 +49,8 @@
     ]
   },
   "devDependencies": {
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "web-vitals": "^3.5.0"
   }
 }

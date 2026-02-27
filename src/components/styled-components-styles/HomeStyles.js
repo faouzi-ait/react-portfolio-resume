@@ -40,7 +40,6 @@ export const TopHeader = styled(MainHeader)`
 `;
 
 export const SubHeader = styled(MainHeader)`
-
   ${respondTo.sm`
   font-size: 1rem
   `}
@@ -56,7 +55,7 @@ export const SubHeader2 = styled(SubHeader)`
   letter-spacing: 1px;
 
   @media only screen and (max-width: 768px) {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 `;
 

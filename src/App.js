@@ -24,11 +24,13 @@ function App() {
 
   return (
     <ThemeProvider
-      theme={getTheme(lightTheme.state ? THEMES.LIGHT : THEMES.DARK)}>
+      theme={getTheme(lightTheme.state ? THEMES.LIGHT : THEMES.DARK)}
+    >
       <TranslationProvider
         locale={
           persistedLanguage ? persistedLanguage : languageTheme.state || 'en-us'
-        }>
+        }
+      >
         <ToggleOptions />
         <MainLayoutContainer>
           <Home />

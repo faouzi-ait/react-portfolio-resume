@@ -1,9 +1,9 @@
-import { SET_LANGUAGE } from "../../types";
+import { SET_LANGUAGE } from '../../types';
 
-export const languageTheme = (state = "en-US", action) => {
+export const languageTheme = (state = 'en-US', action) => {
   switch (action.type) {
     case SET_LANGUAGE:
-      localStorage.setItem("language", action.lang);
+      localStorage.setItem('language', action.lang);
       return {
         ...state,
         state: action.lang,

@@ -14,8 +14,8 @@ function Input({
   placeholder,
   disabled,
   checked,
-  rows = "5",
-  cols = "53",
+  rows = '5',
+  cols = '53',
   errorMessage,
   isContrast = false,
   styleInline,
@@ -45,7 +45,8 @@ function Input({
           className={`${
             !isContrast ? 'form-field-error' : 'form-field-error_contrast'
           }`}
-          role="alert">
+          role="alert"
+        >
           {errorMessage}
         </div>
       )}

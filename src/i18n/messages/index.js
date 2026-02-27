@@ -1,5 +1,5 @@
-import en from "./en-US";
-import fr from "./fr-FR";
+import en from './en-US';
+import fr from './fr-FR';
 
 const messages = {
   ...en,

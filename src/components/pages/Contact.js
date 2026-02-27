@@ -69,7 +69,7 @@ function Contact() {
         name: data.name,
         lastname: '',
         email: data.email,
-        subject: "FROM PERSONAL SITE",
+        subject: 'FROM PERSONAL SITE',
         message: data.message,
       }
     )
@@ -178,7 +178,8 @@ function Contact() {
                   aria-invalid={!!errors.message}
                   className="field"
                   style={setErrorStyle(errors?.message)}
-                  placeholder=""></textarea>
+                  placeholder=""
+                ></textarea>
               )}
             />
             {errors?.message && (
@@ -190,7 +191,8 @@ function Contact() {
           <button
             type="submit"
             disabled={isLoading ? true : false}
-            className="submit-btn">
+            className="submit-btn"
+          >
             {isLoading ? t('sending') : t('send')}
           </button>
         </form>

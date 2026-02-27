@@ -1,12 +1,12 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 const breakpoints = {
-  xl: "1400px",
-  lg: "1200px",
-  md: "992px",
-  s: "768px",
-  sm: "400px",
-  xs: "0px",
+  xl: '1400px',
+  lg: '1200px',
+  md: '992px',
+  s: '768px',
+  sm: '400px',
+  xs: '0px',
 };
 
 export const respondTo = Object.keys(breakpoints).reduce(

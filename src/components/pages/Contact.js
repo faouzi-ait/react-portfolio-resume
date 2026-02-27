@@ -80,8 +80,8 @@ function Contact() {
         setValue('message', '');
         reset();
       })
-      .catch((error) => {
-        console.log(error.message);
+      .catch((/*error*/) => {
+        // console.log(error.message);
         setIsLoading(false);
         setError('The message could not be sent, please try again...');
         resetMessage(setError);
@@ -127,7 +127,7 @@ function Contact() {
               name="name"
               control={control}
               rules={{ required: true }}
-              render={({ field: { ref, ...field } }) => (
+              render={({ field: { /* ref, */ ...field } }) => (
                 <Input
                   {...field}
                   type="text"
@@ -147,7 +147,7 @@ function Contact() {
               name="email"
               control={control}
               rules={{ required: true }}
-              render={({ field: { ref, ...field } }) => (
+              render={({ field: { /* ref, */ ...field } }) => (
                 <Input
                   {...field}
                   type="text"
@@ -168,7 +168,7 @@ function Contact() {
               name="message"
               control={control}
               rules={{ required: true }}
-              render={({ field: { ref, ...field } }) => (
+              render={({ field: { /* ref, */ ...field } }) => (
                 <textarea
                   {...field}
                   type="textarea"

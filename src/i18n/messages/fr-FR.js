@@ -41,13 +41,17 @@ const frFR = {
     // EXPERIENCE PAGE
     experience: 'Expérience Professionnelle',
 
+    jobTitle0:
+      'Développeur Front End - React | ThermoFisher | Jan 2025 - Present',
     jobTitle1:
-      'Développeur Front End - React| LSEG Group | March 2024 - Present',
+      'Développeur Front End - React| LSEG Group | March 2024 - January 2025',
     jobTitle2:
       'Développeur Front End - React| NatWest Group | Juillet 2021 - Présent',
     jobTitle3:
       'Développeur Front End - React| RiskCare Financial | Octobre 2020 - Juin 2021',
 
+    jobDesc0:
+      "Développement d'une nouvelle application médicale pour Thermo Fisher Scientific permettant de gérer les données des patients ainsi que leurs dossiers médicaux et les traitements associés.",
     jobDesc1:
       "Développement d'une nouvelle plateforme de trading pour l'ensemble des services financiers du portail DMI - Capital Marketplace du groupe LSEG.",
     jobDesc2:

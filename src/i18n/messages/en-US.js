@@ -45,15 +45,19 @@ const enUS = {
     // EXPERIENCE PAGE
     experience: 'Professional Experiences',
 
+    jobTitle0:
+      'Front End - React Developer | ThermoFisher | Jan 2025 - Present',
     jobTitle1:
-      'Front End - React Developer | LSEG Group | March 2024 - Present',
+      'Front End - React Developer | LSEG Group | March 2024 - January 2025',
     jobTitle2:
       'Front End - React Developer | NatWest Group | July 2021 - August 2023',
     jobTitle3:
       'Front End - React Developer | RiskCare Financial | October 2020 - June 2021',
 
+    jobDesc0:
+      'Currently working on a new ThermoFisher medical application to manage patients data and medical records along with pathology reports and associated treatments with full tracability and search feature. ',
     jobDesc1:
-      'Currently working in developing and enhancing the front-end trading solutions for the DMI Marketplace financial service portal for the London Stock Exchange Group',
+      'Developed the foundations and architecture for a digital blockchain asset management platform',
     jobDesc2:
       'developing the Financials, Banking and Dashboard applications along with the migration from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
     jobDesc3:

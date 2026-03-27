@@ -131,6 +131,24 @@ export const uiWork = [
 
 export const accordionData = [
   {
+    title: t('jobTitle0'),
+    content: t('jobDesc0'),
+    env: [
+      'NX',
+      'NextJS',
+      'TypeScript',
+      'JavaScript ES6+',
+      'Context API',
+      'REST API',
+      'HTML',
+      'CSS',
+      'SASS',
+      'React-Testing-Library',
+      'Jest',
+      'Cypress',
+    ],
+  },
+  {
     title: t('jobTitle1'),
     content: t('jobDesc1'),
     env: [
@@ -139,6 +157,7 @@ export const accordionData = [
       'TypeScript',
       'JavaScript ES6+',
       'Forge-XD',
+      'Storybook',
       'Material-UI',
       'Context API',
       'REST API',

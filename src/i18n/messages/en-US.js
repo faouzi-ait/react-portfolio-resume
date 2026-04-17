@@ -51,13 +51,13 @@ const enUS = {
       'Front End - React Developer | RiskCare Financial | October 2020 - June 2021',
 
     jobDesc0:
-      'Currently working on a new ThermoFisher medical application to manage patients data and medical records along with pathology reports and associated treatments with full tracability and search feature. ',
+      'Developed the new ThermoFisher medical application to manage patients data and medical records along with pathology reports and associated treatments with full tracability and search feature. ',
     jobDesc1:
       'Developed the foundations and architecture for a digital blockchain asset management platform',
     jobDesc2:
-      'developing the Financials, Banking and Dashboard applications along with the migration from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
+      'developed the Financials, Banking and Dashboard applications along with the migration from the current monolithic architecture to a service oriented, API driven model. The front-end is built using ReactJS v17+. Specifically focused on Hooks, Functional Components, centralized data using Redux/Saga and JavaScript ES6+.',
     jobDesc3:
-      'Implementation of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
+      'Implemented of new interfaces and further development of a back-office application of type CRM used by a Finance and Marketing team to manage a portfolio of clients with contacts, messages, meeting requests, communication history and documentation submission.',
 
     // CONTACT PAGE
     contact: 'Contact Me',

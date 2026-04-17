@@ -4,7 +4,7 @@ const frFR = {
   [LOCALES.FRENCH]: {
     // HOME PAGE
     subHeader: 'Développeur',
-    subHeaderb: "4 ans d'expérience",
+    subHeaderb: "5 ans d'expérience",
     subHeader2: 'JavaScript, ReactJS & Redux',
 
     // SIDE NAVIGATION
@@ -16,7 +16,7 @@ const frFR = {
     profileTitle: 'Mon Expertise',
 
     // MY EXPERTISE PAGE
-    profileDesc: `Développeur passionné, spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.`,
+    profileDesc: `Développeur spécialisé dans l'écosystème ReactJS et adepte de la méthodologie Agile/scrum. Intervenant à tout stade du cycle de vie de développement, de la conception au lancement en production. Confortable aussi bien dans une structure en équipe ou autonome, très orienté sur la qualité et la satisfaction de l'utilisateur.`,
 
     librariesTitle: 'Librairies',
     librariesDesc: 'Les librairies qui composent ma stack:',
@@ -42,9 +42,9 @@ const frFR = {
     experience: 'Expérience Professionnelle',
 
     jobTitle0:
-      'Développeur Front End - React | ThermoFisher | Jan 2025 - Present',
+      'Développeur Front End - React | ThermoFisher | Jan 2025 - Avril 2026',
     jobTitle1:
-      'Développeur Front End - React| LSEG Group | March 2024 - January 2025',
+      'Développeur Front End - React| LSEG Group | Mars 2024 - Janvier 2025',
     jobTitle2:
       'Développeur Front End - React| NatWest Group | Juillet 2021 - Présent',
     jobTitle3:

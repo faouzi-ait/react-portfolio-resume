@@ -4,7 +4,7 @@ const enUS = {
   [LOCALES.ENGLISH]: {
     // HOME PAGE
     subHeader: 'Developer',
-    subHeaderb: '4+ years of experience',
+    subHeaderb: '5 years of experience',
     subHeader2: 'JavaScript, ReactJS & Redux',
 
     // SIDE NAVIGATION
@@ -16,11 +16,7 @@ const enUS = {
     profileTitle: 'My Expertise',
 
     // MY EXPERTISE PAGE
-    profileDesc: `Passionate developer, specialized in the ReactJS ecosystem
-          and strong adept of the Agile/Scrum methodology, involved at the earliest
-          stage of the application development cycle from start to deployment.
-          Comfortable within a feature team or in an autonomous structure.
-          Result and quality oriented, always experimenting and reviewing the latest trends and evolutions.`,
+    profileDesc: `Frontend Engineer with 5 years of experience building scalable, high-performance web applications across banking, financial markets, and healthcare environments. Specialised in React, Next.js, JavaScript and TypeScript, with strong expertise in data-intensive platforms and modular front-end architectures. Experienced in enterprise environments, delivering production-grade applications handling complex business logic and large datasets.`,
 
     librariesTitle: 'Libraries',
     librariesDesc: 'Experience developping applications using:',
@@ -46,7 +42,7 @@ const enUS = {
     experience: 'Professional Experiences',
 
     jobTitle0:
-      'Front End - React Developer | ThermoFisher | Jan 2025 - Present',
+      'Front End - React Developer | ThermoFisher | Jan 2025 - April 2026',
     jobTitle1:
       'Front End - React Developer | LSEG Group | March 2024 - January 2025',
     jobTitle2:

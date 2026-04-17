@@ -46,7 +46,7 @@ const frFR = {
     jobTitle1:
       'Développeur Front End - React| LSEG Group | Mars 2024 - Janvier 2025',
     jobTitle2:
-      'Développeur Front End - React| NatWest Group | Juillet 2021 - Présent',
+      'Développeur Front End - React| NatWest Group | Juillet 2021 - Août 2023',
     jobTitle3:
       'Développeur Front End - React| RiskCare Financial | Octobre 2020 - Juin 2021',
 
